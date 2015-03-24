@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfDynaCASESimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfDynaCASESimulation",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
