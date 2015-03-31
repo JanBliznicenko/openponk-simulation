@@ -1,1 +1,2 @@
-(name 'BaselineOfDynaCASESimulation-bliznjan.1' message 'added baseline' id '2a99682d-a613-2a49-81e8-19894bcc066e' date '24 March 2015' time '7:34:29.731198 pm' author 'bliznjan' ancestors () stepChildren ())
+(name 'BaselineOfDynaCASESimulation-bliznjan.2' message 'simulation needs only model now' id 'b93983a8-7c55-fc4f-aad2-38769fab9e69' date '31 March 2015' time '11:29:44.859273 am' author 'bliznjan' ancestors ((name 'BaselineOfDynaCASESimulation-bliznjan.1' message 'added baseline
+' id '75d42388-5369-59e2-94c3-f67f34f0b2e4' date '24 March 2015' time '7:34:32 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())
