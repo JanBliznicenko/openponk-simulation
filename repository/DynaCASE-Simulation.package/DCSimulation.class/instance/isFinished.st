@@ -1,0 +1,3 @@
+accesing
+isFinished
+	self subclassReponsibility

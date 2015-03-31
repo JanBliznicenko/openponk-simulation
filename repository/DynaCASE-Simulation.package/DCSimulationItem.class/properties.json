@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"action" ],
+	"name" : "DCSimulationItem",
+	"pools" : [
+		 ],
+	"super" : "DCSimulationObject",
+	"type" : "normal" }

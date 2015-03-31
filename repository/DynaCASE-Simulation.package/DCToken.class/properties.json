@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"element" ],
+	"name" : "DCToken",
+	"pools" : [
+		 ],
+	"super" : "DCSimulationItem",
+	"type" : "normal" }

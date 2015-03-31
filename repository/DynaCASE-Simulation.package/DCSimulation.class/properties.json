@@ -1,0 +1,20 @@
+{
+	"category" : "DynaCASE-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startingDiagram",
+		"diagram",
+		"preAction",
+		"postAction",
+		"items",
+		"delay",
+		"shouldRun" ],
+	"name" : "DCSimulation",
+	"pools" : [
+		 ],
+	"super" : "DCSimulationObject",
+	"type" : "normal" }

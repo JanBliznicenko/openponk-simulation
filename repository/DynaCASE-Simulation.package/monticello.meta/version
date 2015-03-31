@@ -1,1 +1,2 @@
-(name 'DynaCASE-Simulation-bliznjan.1' message 'created initial package' id '9eb95aba-a21f-ab41-9253-36905721c3db' date '24 March 2015' time '7:35:15.626198 pm' author 'bliznjan' ancestors () stepChildren ())
+(name 'DynaCASE-Simulation-bliznjan.2' message 'added basic classes' id '88c2029a-b43e-684c-8287-abf0d3c806fe' date '31 March 2015' time '11:30:16.895273 am' author 'bliznjan' ancestors ((name 'DynaCASE-Simulation-bliznjan.1' message 'created initial package
+' id 'd15fc4a6-643a-5519-bdc0-399d53f415cb' date '24 March 2015' time '7:35:18 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())

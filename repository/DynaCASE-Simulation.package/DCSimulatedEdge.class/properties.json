@@ -1,0 +1,15 @@
+{
+	"category" : "DynaCASE-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"source",
+		"target" ],
+	"name" : "DCSimulatedEdge",
+	"pools" : [
+		 ],
+	"super" : "DCSimulationItem",
+	"type" : "normal" }
