@@ -2,7 +2,6 @@ initialization
 initialize
 	super initialize.
 	shouldRun := false.
-	items := SortedCollection new.
-	preAction := [  ].
-	postAction := [  ].
+	elements := SortedCollection new.
+	classMapping := Dictionary new.
 	delay := 1000

@@ -1,4 +1,6 @@
-private
+accesing
 diagram: aDiagram
 	diagram := aDiagram.
-	self save
+	self
+		collectItems;
+		save

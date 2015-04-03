@@ -2,5 +2,6 @@ actions
 step
 	self
 		preAction;
-		stepItems;
-		postAction
+		stepElements;
+		postAction;
+		applyStep

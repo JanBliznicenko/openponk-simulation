@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"source",
-		"target" ],
+		 ],
 	"name" : "DCSimulatedEdge",
 	"pools" : [
 		 ],
-	"super" : "DCSimulationItem",
+	"super" : "DCSimulatedElement",
 	"type" : "normal" }

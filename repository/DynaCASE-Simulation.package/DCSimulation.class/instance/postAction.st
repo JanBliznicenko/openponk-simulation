@@ -1,3 +1,5 @@
 private
 postAction
-	self useAction: postAction
+	"do nothing by default"
+
+	

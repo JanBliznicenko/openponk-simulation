@@ -1,3 +1,3 @@
 private
-addStep
+applyStep
 	steps := steps + 1

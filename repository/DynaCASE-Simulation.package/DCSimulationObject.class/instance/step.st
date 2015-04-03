@@ -1,3 +1,5 @@
 actions
 step
-	self addStep
+	"do nothing by default"
+
+	

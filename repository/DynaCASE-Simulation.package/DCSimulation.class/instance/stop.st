@@ -1,0 +1,3 @@
+actions
+stop
+	shouldRun := false

@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"element",
 		"incoming",
 		"outgoing",
-		"tokens" ],
+		"tokens",
+		"model" ],
 	"name" : "DCSimulatedElement",
 	"pools" : [
 		 ],

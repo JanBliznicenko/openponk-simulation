@@ -8,11 +8,10 @@
 	"instvars" : [
 		"startingDiagram",
 		"diagram",
-		"preAction",
-		"postAction",
-		"items",
 		"delay",
-		"shouldRun" ],
+		"shouldRun",
+		"elements",
+		"classMapping" ],
 	"name" : "DCSimulation",
 	"pools" : [
 		 ],

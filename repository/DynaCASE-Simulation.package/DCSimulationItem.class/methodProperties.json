@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"action" : "bliznjan 3/31/2015 10:07",
-		"initialize" : "bliznjan 3/31/2015 10:10" } }
+		"action" : "bliznjan 4/1/2015 14:09",
+		"applyStep" : "bliznjan 4/3/2015 16:05",
+		"initialize" : "bliznjan 3/31/2015 11:30:20",
+		"step" : "bliznjan 4/3/2015 15:58" } }

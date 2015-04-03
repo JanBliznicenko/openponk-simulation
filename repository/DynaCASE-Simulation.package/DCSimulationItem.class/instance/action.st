@@ -1,3 +1,5 @@
 actions
 action
-	self useAction: action
+	"do nothing by default"
+
+	

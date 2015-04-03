@@ -1,3 +1,3 @@
 private
 preAction
-	self useAction: preAction
+	"do nothing by default"
