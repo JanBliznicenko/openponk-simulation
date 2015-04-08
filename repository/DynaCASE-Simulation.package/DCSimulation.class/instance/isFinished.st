@@ -1,3 +1,3 @@
 accesing
 isFinished
-	self subclassReponsibility
+	self subclassResponsibility

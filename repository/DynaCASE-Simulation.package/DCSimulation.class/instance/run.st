@@ -1,7 +1,7 @@
 actions
 run
 	shouldRun := true.
-	(self isFinished not and: shouldRun)
+	[ shouldRun and: [ self isFinished not ] ]
 		whileTrue: [ 
-			Delay forMilliseconds: delay.
+			(Delay forMilliseconds: delay) wait.
 			self step ]
