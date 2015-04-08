@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfDynaCASESimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ManifestBaselineOfDynaCASESimulation",
+	"pools" : [
+		 ],
+	"super" : "PackageManifest",
+	"type" : "normal" }
