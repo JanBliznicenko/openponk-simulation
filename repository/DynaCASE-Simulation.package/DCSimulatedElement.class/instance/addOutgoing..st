@@ -1,4 +1,6 @@
 adding
 addOutgoing: anElement
-	anElement addedIncoming: self.
+	anElement
+		ifNil: [ ^ self ];
+		addedIncoming: self.
 	self addedOutgoing: anElement

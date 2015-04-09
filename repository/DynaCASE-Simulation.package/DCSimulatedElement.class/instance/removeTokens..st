@@ -1,4 +1,4 @@
-accessing
+tokens
 removeTokens: anInteger
 	| removedTokens |
 	removedTokens := SortedCollection new.

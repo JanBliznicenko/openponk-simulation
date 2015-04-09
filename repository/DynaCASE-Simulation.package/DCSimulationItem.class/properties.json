@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"simulation" ],
 	"name" : "DCSimulationItem",
 	"pools" : [
 		 ],

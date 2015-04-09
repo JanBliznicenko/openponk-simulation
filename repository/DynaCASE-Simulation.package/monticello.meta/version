@@ -1,4 +1,5 @@
-(name 'DynaCASE-Simulation-bliznjan.4' message 'applied code critics' id '6d13b7a6-7b77-ec4a-94f3-85d17987d335' date '8 April 2015' time '11:45:59.835823 am' author 'bliznjan' ancestors ((name 'DynaCASE-Simulation-bliznjan.3' message 'multiple improvements (still not very usable)
+(name 'DynaCASE-Simulation-bliznjan.5' message 'loading from model' id 'b018dace-f42d-a549-95f3-2acefd284e50' date '9 April 2015' time '2:31:37.658117 pm' author 'bliznjan' ancestors ((name 'DynaCASE-Simulation-bliznjan.4' message 'applied code critics
+' id '4e996d28-ffb4-50ca-990c-e780ecee4389' date '8 April 2015' time '11:46 am' author 'bliznjan' ancestors ((name 'DynaCASE-Simulation-bliznjan.3' message 'multiple improvements (still not very usable)
 ' id '9abfc8af-e654-53e4-ab36-695ec4f64654' date '3 April 2015' time '4:44:57 pm' author 'bliznjan' ancestors ((name 'DynaCASE-Simulation-bliznjan.2' message 'added basic classes
 ' id 'ac819eef-45e6-5fab-a047-e4f0efd31b13' date '31 March 2015' time '11:30:20 am' author 'bliznjan' ancestors ((name 'DynaCASE-Simulation-bliznjan.1' message 'created initial package
-' id 'd15fc4a6-643a-5519-bdc0-399d53f415cb' date '24 March 2015' time '7:35:18 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())
+' id 'd15fc4a6-643a-5519-bdc0-399d53f415cb' date '24 March 2015' time '7:35:18 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())

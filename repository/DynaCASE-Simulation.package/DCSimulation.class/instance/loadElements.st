@@ -1,3 +1,4 @@
-private
+private - creation
 loadElements
-	diagram elements do: [ :element | self loadElementsFrom: element ]
+	diagram elements do: [ :model | self loadElementFrom: model ].
+	elements do: [ :element | element loadConnectedItems ]

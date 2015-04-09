@@ -1,4 +1,3 @@
-accessing
+private - accessing
 model: aModel
-	model := aModel.
-	self createTokens
+	model := aModel

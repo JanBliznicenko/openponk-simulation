@@ -1,4 +1,4 @@
-accessing
+tokens
 removeToken: aToken
 	tokens remove: aToken.
 	aToken element: nil.

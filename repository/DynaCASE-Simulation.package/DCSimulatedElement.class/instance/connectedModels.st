@@ -1,3 +1,0 @@
-creation
-connectedModels
-	^ self subclassResponsibility
