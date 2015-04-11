@@ -1,3 +1,3 @@
 accesing
 delay
-	^ delay
+	^ delay millisecondDelayDuration

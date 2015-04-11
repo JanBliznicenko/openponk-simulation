@@ -1,3 +1,3 @@
 private - creation
-loadTokens
+createAndLoadTokens
 	"do nothing by default - leave collection empty"

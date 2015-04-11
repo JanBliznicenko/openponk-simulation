@@ -1,3 +1,3 @@
 private - creation
-loadElementFrom: aModel
+createElementFrom: aModel
 	elements add: ((classMapping at: aModel class) simulation: self model: aModel)

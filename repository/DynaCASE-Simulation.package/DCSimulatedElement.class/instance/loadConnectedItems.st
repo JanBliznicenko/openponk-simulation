@@ -1,3 +1,3 @@
 creation
 loadConnectedItems
-	self loadTokens
+	self createAndLoadTokens

@@ -1,3 +1,4 @@
-adding
+tokens
 addToken: aToken
-	tokens add: aToken
+	tokens add: aToken.
+	aToken element: self

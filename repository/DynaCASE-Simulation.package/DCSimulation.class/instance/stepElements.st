@@ -1,3 +1,3 @@
 private - actions
 stepElements
-	elements do: [ :element | element step ]
+	self elementsDo: [ :element | element step ]

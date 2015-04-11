@@ -1,3 +1,3 @@
 accesing
 delay: milliSeconds
-	delay := milliSeconds
+	delay := Delay forMilliseconds: milliSeconds

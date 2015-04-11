@@ -3,5 +3,4 @@ step
 	self
 		preAction;
 		stepElements;
-		postAction;
-		applyStep
+		postAction

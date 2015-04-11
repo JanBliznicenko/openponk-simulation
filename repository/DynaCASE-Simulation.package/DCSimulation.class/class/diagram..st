@@ -1,5 +1,5 @@
 instance creation
 diagram: aDiagram
-	self new
+	^ self new
 		diagram: aDiagram;
 		yourself
