@@ -1,0 +1,3 @@
+creation
+loadIntoSimulatedElements: simulatedElements
+	simulatedElements add: self

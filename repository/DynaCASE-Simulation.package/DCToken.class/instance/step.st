@@ -1,3 +1,0 @@
-actions
-step
-	self action

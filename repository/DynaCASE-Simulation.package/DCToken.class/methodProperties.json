@@ -1,9 +1,7 @@
 {
 	"class" : {
-		"simulation:" : "bliznjan 4/10/2015 09:20",
-		"simulation:element:" : "bliznjan 4/10/2015 09:17" },
+		"element:" : "bliznjan 4/13/2015 19:43",
+		"simulation:" : "bliznjan 4/11/2015 09:27:26" },
 	"instance" : {
-		"action" : "bliznjan 4/10/2015 09:43",
-		"element" : "bliznjan 4/9/2015 14:30:34",
-		"element:" : "bliznjan 4/9/2015 14:30:34",
-		"step" : "bliznjan 4/10/2015 09:43" } }
+		"element" : "bliznjan 4/11/2015 09:27:26",
+		"element:" : "bliznjan 4/13/2015 19:50" } }

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"element" ],
-	"name" : "DCToken",
+		 ],
+	"name" : "DCEdgeSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCItemSimulator",
+	"super" : "DCElementSimulator",
 	"type" : "normal" }

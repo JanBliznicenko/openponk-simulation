@@ -6,8 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"element" ],
-	"name" : "DCToken",
+		"incoming",
+		"outgoing",
+		"tokens",
+		"model",
+		"startingModel" ],
+	"name" : "DCElementSimulator",
 	"pools" : [
 		 ],
 	"super" : "DCItemSimulator",

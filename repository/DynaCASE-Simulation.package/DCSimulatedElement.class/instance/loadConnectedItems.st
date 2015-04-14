@@ -1,3 +1,0 @@
-creation
-loadConnectedItems
-	self createAndLoadTokens
