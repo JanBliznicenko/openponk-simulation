@@ -1,3 +1,3 @@
 actions
 step
-	actions do: [ :action | action value ]
+	self ifSteppable: [ actions do: [ :action | action value ] ]

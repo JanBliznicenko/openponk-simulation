@@ -4,4 +4,6 @@
 	"instance" : {
 		"addAction:" : "bliznjan 4/14/2015 11:53:10",
 		"initialize" : "bliznjan 4/14/2015 11:53:10",
-		"step" : "bliznjan 4/14/2015 11:53:10" } }
+		"isSimulable" : "bliznjan 4/14/2015 18:45",
+		"isSteppable" : "bliznjan 4/14/2015 18:46",
+		"step" : "bliznjan 4/14/2015 19:11" } }

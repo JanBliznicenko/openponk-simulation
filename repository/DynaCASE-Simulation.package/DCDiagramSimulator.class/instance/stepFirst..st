@@ -1,3 +1,3 @@
 actions
 stepFirst: aPositiveInteger
-	(simulatedElements first: aPositiveInteger) do: [ :element | element step ]
+	(simulableElements first: aPositiveInteger) do: [ :element | element step ]

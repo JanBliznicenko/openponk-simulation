@@ -10,7 +10,7 @@
 		"delay",
 		"shouldRun",
 		"elements",
-		"simulatedElements" ],
+		"simulableElements" ],
 	"name" : "DCDiagramSimulator",
 	"pools" : [
 		 ],

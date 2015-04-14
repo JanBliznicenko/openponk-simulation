@@ -1,3 +1,3 @@
 private - actions
 randomElementDo: aBlock
-	aBlock value: simulatedElements atRandom
+	aBlock value: (self steppableElements ifEmpty: [ ^ self ]) atRandom
