@@ -5,5 +5,5 @@ run
 	[ shouldRun and: [ self isFinished not ] ]
 		whileTrue: [ 
 			self
-				wait;
-				step ] ] fork
+				step;
+				wait ] ] fork
