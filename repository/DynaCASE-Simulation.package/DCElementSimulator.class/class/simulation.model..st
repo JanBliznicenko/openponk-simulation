@@ -1,6 +1,6 @@
 instance creation
 simulation: aSimulation model: anElement
 	^ self new
-		simulation: aSimulation;
+		diagram: aSimulation;
 		model: anElement;
 		yourself

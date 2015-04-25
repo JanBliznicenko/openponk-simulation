@@ -1,3 +1,0 @@
-actions
-stop
-	shouldRun := false

@@ -1,3 +1,3 @@
-private - creation
+accesing
 steppableElements
-	^ simulableElements select: [ :element | element isSteppable ]
+	^ simulableElements select: [ :el | el isSteppable ]

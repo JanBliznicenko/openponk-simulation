@@ -2,5 +2,5 @@ creation
 loadConnectedItems
 	super loadConnectedItems.
 	self
-		addIncoming: (simulation simulatorOf: model source);
-		addOutgoing: (simulation simulatorOf: model target)
+		addIncoming: (diagramSimulator simulatorOf: model source);
+		addOutgoing: (diagramSimulator simulatorOf: model target)

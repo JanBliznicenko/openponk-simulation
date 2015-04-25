@@ -1,0 +1,17 @@
+{
+	"category" : "DynaCASE-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stepFrom",
+		"stepIn",
+		"stepPriority",
+		"stepSelect" ],
+	"name" : "DCEnumerableSimulator",
+	"pools" : [
+		 ],
+	"super" : "DCSimulatorObject",
+	"type" : "normal" }

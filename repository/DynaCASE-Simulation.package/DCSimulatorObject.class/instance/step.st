@@ -1,3 +1,3 @@
-actions
+stepping
 step
-	actions do: [ :action | action value ]
+	stepAction value

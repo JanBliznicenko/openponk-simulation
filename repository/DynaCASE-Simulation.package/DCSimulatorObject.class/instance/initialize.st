@@ -1,4 +1,7 @@
 initialization
 initialize
 	super initialize.
-	actions := OrderedCollection new
+	shouldRun := false.
+	self
+		delay: 1000;
+		initializeStepping

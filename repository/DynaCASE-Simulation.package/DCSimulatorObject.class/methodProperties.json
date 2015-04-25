@@ -2,8 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addAction:" : "bliznjan 4/14/2015 11:53:10",
-		"initialize" : "bliznjan 4/14/2015 11:53:10",
-		"isSimulable" : "bliznjan 4/14/2015 18:45",
-		"isSteppable" : "bliznjan 4/14/2015 18:46",
-		"step" : "bliznjan 4/14/2015 19:33" } }
+		"action:" : "bliznjan 4/25/2015 09:44",
+		"actions:" : "bliznjan 4/25/2015 09:45",
+		"delay" : "bliznjan 4/23/2015 12:18",
+		"delay:" : "bliznjan 4/23/2015 12:18",
+		"initialize" : "bliznjan 4/25/2015 09:53",
+		"initializeStepping" : "bliznjan 4/25/2015 09:53",
+		"isSimulable" : "bliznjan 4/14/2015 19:42:00",
+		"isSteppable" : "bliznjan 4/14/2015 19:42:00",
+		"step" : "bliznjan 4/25/2015 09:31",
+		"stop" : "bliznjan 4/23/2015 12:16",
+		"wait" : "bliznjan 4/23/2015 12:17" } }

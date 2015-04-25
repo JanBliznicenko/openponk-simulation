@@ -1,3 +1,3 @@
 testing
 isFinished
-	self subclassResponsibility
+	^ self isSteppable not

@@ -7,12 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"diagram",
-		"delay",
-		"shouldRun",
 		"elements",
 		"simulableElements" ],
 	"name" : "DCDiagramSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCSimulatorObject",
+	"super" : "DCEnumerableSimulator",
 	"type" : "normal" }

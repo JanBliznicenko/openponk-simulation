@@ -1,3 +1,0 @@
-accesing
-delay
-	^ delay millisecondDelayDuration

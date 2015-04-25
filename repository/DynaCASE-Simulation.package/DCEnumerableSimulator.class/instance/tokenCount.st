@@ -1,0 +1,3 @@
+accessing
+tokenCount
+	^ self subclassResponsibility

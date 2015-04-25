@@ -10,9 +10,11 @@
 		"outgoing",
 		"tokens",
 		"model",
-		"startingModel" ],
+		"startingModel",
+		"priority",
+		"diagramSimulator" ],
 	"name" : "DCElementSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCItemSimulator",
+	"super" : "DCEnumerableSimulator",
 	"type" : "normal" }
