@@ -1,1 +1,2 @@
-(name 'BaselineOfDynaCASESimulationGUI-bliznjan.1' message 'created simulation gui' id '6b017da7-ef06-2c4a-b9a5-e3825014326a' date '29 April 2015' time '1:12:53.335382 pm' author 'bliznjan' ancestors () stepChildren ())
+(name 'BaselineOfDynaCASESimulationGUI-bliznjan.2' message 'fixed baseline typo' id '47b7cb7c-f494-9246-bff1-4e22069ff304' date '29 April 2015' time '1:34:36.198414 pm' author 'bliznjan' ancestors ((name 'BaselineOfDynaCASESimulationGUI-bliznjan.1' message 'created simulation gui
+' id '8772ea16-751e-547e-995f-0bc204361878' date '29 April 2015' time '1:12:55 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())
