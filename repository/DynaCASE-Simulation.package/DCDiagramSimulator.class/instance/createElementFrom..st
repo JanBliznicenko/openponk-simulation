@@ -1,5 +1,7 @@
 private - creation
 createElementFrom: aModel
+	"creates simulator element for model element"
+
 	| simulatorClass |
 	simulatorClass := ClassMapping
 		at: aModel class

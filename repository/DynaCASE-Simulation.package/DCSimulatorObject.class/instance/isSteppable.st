@@ -1,5 +1,5 @@
 testing
 isSteppable
-	"tells whether I can step now"
+	"can I step right now?"
 
 	^ self subclassResponsibility

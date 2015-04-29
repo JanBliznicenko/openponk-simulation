@@ -1,5 +1,7 @@
 stepping
 repeatWithoutDelay
+	"repeats step until finished or stopped"
+
 	| originalDelay |
 	originalDelay := self delay.
 	self

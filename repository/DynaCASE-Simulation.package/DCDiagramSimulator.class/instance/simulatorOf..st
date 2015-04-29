@@ -1,5 +1,7 @@
 accesing
 simulatorOf: aModel
+	"answers element simulator of model element"
+
 	^ elements
 		detect: [ :element | element model = aModel ]
 		ifNone: [ 

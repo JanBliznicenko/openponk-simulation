@@ -1,3 +1,3 @@
 private - actions
 elementsDo: aBlock
-	elements do: aBlock
+	self elements do: aBlock

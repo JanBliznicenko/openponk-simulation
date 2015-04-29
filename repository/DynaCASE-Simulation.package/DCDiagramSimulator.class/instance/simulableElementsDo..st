@@ -1,3 +1,3 @@
 private - actions
 simulableElementsDo: aBlock
-	simulableElements do: aBlock
+	self simulableElements do: aBlock

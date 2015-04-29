@@ -1,5 +1,5 @@
 testing
 isSimulable
-	"tells whether there could be possibility to step"
+	"could there be any possibility to step?"
 
 	^ self subclassResponsibility

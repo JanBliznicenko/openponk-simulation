@@ -1,5 +1,11 @@
 stepping
 priorityTop
+	"stepping settings
+	before: from
+	after: in
+	
+	steps only simulators with top priority"
+
 	stepPriority := [ 
 	| maxPriority fromCol |
 	fromCol := stepFrom value.
