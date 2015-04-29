@@ -7,4 +7,4 @@ baseline: spec
 			spec baseline: 'DynaCASE' with: [ spec repository: 'github://dynacase/dynacase/repository' ].
 			spec baseline: 'DynaCASESimulation' with: [ spec repository: 'github://bliznjan/dynacase-simulation/repository' ].
 			spec package: 'DynaCASE-SimulationGUI' with: [ spec requires: #('DynaCASE' 'DynaCASESimulation') ].
-			spec group: 'default' with: #('DynaCASE-Simulation') ]
+			spec group: 'default' with: #('DynaCASE-SimulationGUI') ]
