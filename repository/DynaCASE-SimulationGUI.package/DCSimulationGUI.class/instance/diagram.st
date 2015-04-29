@@ -1,0 +1,3 @@
+accessing
+diagram
+	^ diagramSimulator diagram

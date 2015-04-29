@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"controller:" : "bliznjan 4/29/2015 12:21",
+		"controllerClass" : "bliznjan 4/28/2015 01:00",
+		"defaultSpec" : "bliznjan 4/27/2015 23:00",
+		"initialize" : "bliznjan 4/29/2015 11:21",
+		"initializeMenuButtons" : "bliznjan 4/29/2015 11:17",
+		"initializeMenuItems" : "bliznjan 4/29/2015 12:33",
+		"newForController:" : "bliznjan 4/28/2015 21:55",
+		"simulableControllerClasses" : "bliznjan 4/29/2015 11:58",
+		"stepSimulatorOfController:" : "bliznjan 4/29/2015 12:18" },
+	"instance" : {
+		"buttonItems" : "bliznjan 4/29/2015 08:54",
+		"buttons" : "bliznjan 4/27/2015 23:01",
+		"controller:" : "bliznjan 4/29/2015 08:54",
+		"diagram" : "bliznjan 4/29/2015 08:34",
+		"diagram:" : "bliznjan 4/29/2015 08:54",
+		"initialExtent" : "bliznjan 4/29/2015 08:55",
+		"initializePresenter" : "bliznjan 4/28/2015 01:51",
+		"initializeWidgets" : "bliznjan 4/27/2015 23:04",
+		"isOpen" : "bliznjan 4/28/2015 21:51",
+		"simulator" : "bliznjan 4/27/2015 22:53",
+		"simulatorClass" : "bliznjan 4/27/2015 23:23",
+		"stepSimulatorOfController:" : "bliznjan 4/29/2015 12:17" } }
