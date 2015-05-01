@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-SimulationGUI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ManifestDynaCASESimulationGUI",
+	"pools" : [
+		 ],
+	"super" : "PackageManifest",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
-testing
+windows
 isOpen
 	^ self hasWindow

@@ -1,3 +1,3 @@
 accessing
 diagram
-	^ diagramSimulator diagram
+	^ diagramSimulator model

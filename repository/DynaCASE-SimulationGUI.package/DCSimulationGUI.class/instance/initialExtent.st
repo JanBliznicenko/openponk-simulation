@@ -1,3 +1,3 @@
-api
+initialization
 initialExtent
 	^ 400 @ 10
