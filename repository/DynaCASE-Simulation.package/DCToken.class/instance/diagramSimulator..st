@@ -1,3 +1,3 @@
 private - accessing
-diagram: aDiagramSimulator
+diagramSimulator: aDiagramSimulator
 	diagramSimulator := aDiagramSimulator

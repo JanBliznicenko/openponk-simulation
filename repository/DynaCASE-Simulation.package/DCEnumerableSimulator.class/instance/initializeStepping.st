@@ -1,6 +1,6 @@
 initialization
 initializeStepping
-	"use default stepping settings"
+	"sets default stepping settings"
 
 	super initializeStepping.
 	self

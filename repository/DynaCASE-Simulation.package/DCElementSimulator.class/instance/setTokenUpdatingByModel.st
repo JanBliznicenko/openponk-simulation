@@ -1,5 +1,5 @@
 creation
 setTokenUpdatingByModel
-	"do nothing"
+	"do nothing by default"
 
 	

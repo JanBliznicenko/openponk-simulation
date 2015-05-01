@@ -10,4 +10,4 @@ createElementFrom: aModel
 				error:
 					aModel class asString , ' is not part of model of ' , self class asString
 						, ' or classMapping is not properly initialized on class side.' ].
-	elements add: (simulatorClass simulation: self model: aModel)
+	elements add: (simulatorClass diagramSimulator: self model: aModel)

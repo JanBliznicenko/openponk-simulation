@@ -4,6 +4,8 @@ repeatTimes: anInteger
 	 stops also when finished or stopped
 	 waits for delay between every step"
 
+	shouldRun
+		ifTrue: [ ^ self ].	"it is already running"
 	shouldRun := true.
 	[ 
 	anInteger
@@ -12,4 +14,5 @@ repeatTimes: anInteger
 				ifFalse: [ 
 					self
 						step;
-						wait ] ] ] fork
+						wait ] ].
+	shouldRun := false ] fork

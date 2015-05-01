@@ -1,8 +1,8 @@
 private - accessing
-diagram: aDiagram
+model: aDiagram
 	"sets and loads model"
 
-	diagram := aDiagram.
+	super model: aDiagram.
 	self
 		loadItems;
 		loadState

@@ -5,6 +5,6 @@ simulatorOf: aModel
 	^ elements
 		detect: [ :element | element model = aModel ]
 		ifNone: [ 
-			diagram = aModel
-				ifTrue: [ diagram ]
+			model = aModel
+				ifTrue: [ model ]
 				ifFalse: [ self error: aModel asString , ' not found' ] ]

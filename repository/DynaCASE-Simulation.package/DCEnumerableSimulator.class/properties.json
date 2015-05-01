@@ -9,7 +9,8 @@
 		"stepFrom",
 		"stepIn",
 		"stepPriority",
-		"stepSelect" ],
+		"stepSelect",
+		"model" ],
 	"name" : "DCEnumerableSimulator",
 	"pools" : [
 		 ],

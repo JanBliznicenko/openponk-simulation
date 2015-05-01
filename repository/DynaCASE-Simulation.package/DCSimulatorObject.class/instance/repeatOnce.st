@@ -2,5 +2,5 @@ stepping
 repeatOnce
 	"steps once"
 
-	self isFinished
-		ifFalse: self step
+	self isSteppable
+		ifTrue: [ self step ]

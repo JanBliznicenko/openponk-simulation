@@ -1,5 +1,0 @@
-accesing
-diagram
-	"model"
-
-	^ diagram

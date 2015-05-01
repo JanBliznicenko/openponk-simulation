@@ -1,4 +1,4 @@
 private - accessing
 model: aModel
-	model := aModel.
-	startingModel := aModel copy
+	super model: aModel.
+	self saveState

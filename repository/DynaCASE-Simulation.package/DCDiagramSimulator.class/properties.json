@@ -6,7 +6,6 @@
 		"ClassMapping" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"diagram",
 		"elements",
 		"simulableElements" ],
 	"name" : "DCDiagramSimulator",

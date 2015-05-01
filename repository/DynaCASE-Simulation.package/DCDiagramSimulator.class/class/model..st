@@ -1,5 +1,5 @@
 instance creation
-diagram: aDiagram
+model: aDiagram
 	^ self new
-		diagram: aDiagram;
+		model: aDiagram;
 		yourself

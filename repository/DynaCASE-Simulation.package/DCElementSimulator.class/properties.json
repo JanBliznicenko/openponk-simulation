@@ -9,7 +9,6 @@
 		"incoming",
 		"outgoing",
 		"tokens",
-		"model",
 		"startingModel",
 		"priority",
 		"diagramSimulator" ],
