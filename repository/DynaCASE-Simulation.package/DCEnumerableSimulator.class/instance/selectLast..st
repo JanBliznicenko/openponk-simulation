@@ -8,5 +8,5 @@ selectLast: amount
 
 	stepSelect := [ 
 	| collection |
-	collection := stepIn value.
+	collection := self valueForSelect.
 	collection last: (amount min: collection size) ]

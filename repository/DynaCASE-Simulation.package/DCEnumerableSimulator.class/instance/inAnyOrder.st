@@ -6,4 +6,4 @@ inAnyOrder
 	
 	steps simulators in undetermined order - takes least time"
 
-	stepIn := [ stepPriority value ]
+	stepIn := [ self valueForIn ]

@@ -1,5 +1,9 @@
 stepping
 actions: blocksCollection
-	"sets collection of actions for stepping"
+	"stepping settings
+	before: based on valueForAction method
+	after: step/repeat
+	
+	sets collection of actions for stepping"
 
-	stepAction := self subclassResponsibility
+	actions := blocksCollection

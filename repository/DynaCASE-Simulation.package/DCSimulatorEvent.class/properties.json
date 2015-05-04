@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-Simulation-Events",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"simulator" ],
+	"name" : "DCSimulatorEvent",
+	"pools" : [
+		 ],
+	"super" : "DCSimulationEvent",
+	"type" : "normal" }

@@ -6,4 +6,4 @@ inRandomOrder
 	
 	steps simulators in random (shuffled) order"
 
-	stepIn := [ stepPriority value asOrderedCollection shuffle ]
+	stepIn := [ self valueForIn asOrderedCollection shuffle ]

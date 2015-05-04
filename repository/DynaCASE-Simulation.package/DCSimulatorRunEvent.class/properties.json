@@ -1,0 +1,16 @@
+{
+	"category" : "DynaCASE-Simulation-Events",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"limited",
+		"repeatTimes",
+		"delay" ],
+	"name" : "DCSimulatorRunEvent",
+	"pools" : [
+		 ],
+	"super" : "DCSimulatorEvent",
+	"type" : "normal" }

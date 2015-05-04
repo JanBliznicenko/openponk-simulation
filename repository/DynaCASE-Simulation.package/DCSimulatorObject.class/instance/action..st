@@ -1,5 +1,9 @@
 stepping
 action: aBlock
-	"sets action for stepping"
+	"stepping settings
+	before: based on valueForAction method
+	after: step/repeat
+	
+	sets action for stepping"
 
-	stepAction := self subclassResponsibility
+	self actions: aBlock asOrderedCollection

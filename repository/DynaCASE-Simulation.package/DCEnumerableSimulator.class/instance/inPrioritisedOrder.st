@@ -6,4 +6,4 @@ inPrioritisedOrder
 	
 	steps simulators ordered by priority"
 
-	stepIn := [ (SortedCollection sortBlock: self sortBlock) addAll: stepPriority value ]
+	stepIn := [ (SortedCollection sortBlock: self sortBlock) addAll: self valueForIn ]

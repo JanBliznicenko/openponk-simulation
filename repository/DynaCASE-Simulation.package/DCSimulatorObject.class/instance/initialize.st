@@ -4,4 +4,5 @@ initialize
 	shouldRun := false.
 	self
 		delay: 1000;
-		initializeStepping
+		setDefaultStepping.
+	announcer := Announcer new

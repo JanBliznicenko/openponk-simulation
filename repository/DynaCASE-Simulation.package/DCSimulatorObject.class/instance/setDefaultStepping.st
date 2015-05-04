@@ -1,5 +1,5 @@
 initialization
-initializeStepping
+setDefaultStepping
 	"sets default stepping settings"
 
 	self action: [ :item |  ]

@@ -4,8 +4,11 @@ repeatTimes: anInteger
 	 stops also when finished or stopped
 	 waits for delay between every step"
 
+	| delay |
 	shouldRun
 		ifTrue: [ ^ self ].	"it is already running"
+	delay := self delay.
+	self announce: (DCSimulatorWillRun simulator: self repeatTimes: anInteger delay: delay).
 	shouldRun := true.
 	[ 
 	anInteger
@@ -14,5 +17,6 @@ repeatTimes: anInteger
 				ifFalse: [ 
 					self
 						step;
-						wait ] ].
-	shouldRun := false ] fork
+						waitFor: delay ] ].
+	shouldRun := false.
+	self announce: (DCSimulatorStoppedRun simulator: self repeatTimes: anInteger delay: delay) ] fork

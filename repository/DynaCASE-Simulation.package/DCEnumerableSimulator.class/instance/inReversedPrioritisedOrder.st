@@ -6,10 +6,4 @@ inReversedPrioritisedOrder
 	
 	steps simulators ordered by priority from least to top"
 
-	| settingPrioritised |
-	self inPrioritisedOrder.
-	settingPrioritised := stepIn.
-	stepIn := [ 
-	settingPrioritised value reversed
-		sortBlock: self reversedSortBlock;
-		yourself ]
+	stepIn := [ (SortedCollection sortBlock: self reversedSortBlock) addAll: self valueForIn ]

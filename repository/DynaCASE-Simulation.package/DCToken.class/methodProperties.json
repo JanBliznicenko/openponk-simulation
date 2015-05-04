@@ -1,14 +1,13 @@
 {
 	"class" : {
-		"diagramSimulator:" : "bliznjan 4/30/2015 17:05",
-		"element:" : "bliznjan 4/29/2015 13:06:49" },
+		"diagramSimulator:" : "bliznjan 5/1/2015 10:30:46",
+		"element:" : "bliznjan 5/1/2015 10:30:46" },
 	"instance" : {
-		"action:" : "bliznjan 4/29/2015 13:06:49",
-		"actions:" : "bliznjan 4/29/2015 13:06:49",
-		"diagramSimulator" : "bliznjan 4/30/2015 16:59",
-		"diagramSimulator:" : "bliznjan 4/30/2015 16:59",
-		"element" : "bliznjan 4/29/2015 13:06:49",
-		"element:" : "bliznjan 4/30/2015 17:00",
-		"initialize" : "bliznjan 4/29/2015 13:06:49",
-		"priority" : "bliznjan 4/30/2015 15:40",
-		"priority:" : "bliznjan 4/29/2015 13:06:49" } }
+		"diagramSimulator" : "bliznjan 5/1/2015 10:30:46",
+		"diagramSimulator:" : "bliznjan 5/1/2015 10:30:46",
+		"element" : "bliznjan 5/1/2015 10:30:46",
+		"element:" : "bliznjan 5/1/2015 10:30:46",
+		"initialize" : "bliznjan 5/1/2015 10:30:46",
+		"priority" : "bliznjan 5/1/2015 10:30:46",
+		"priority:" : "bliznjan 5/1/2015 10:30:46",
+		"valueForAction" : "bliznjan 5/4/2015 11:52" } }
