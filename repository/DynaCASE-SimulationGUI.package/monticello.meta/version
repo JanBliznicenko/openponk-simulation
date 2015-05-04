@@ -1,2 +1,3 @@
-(name 'DynaCASE-SimulationGUI-bliznjan.2' message 'reverts simulation when closed, minor code refactoring' id '4aaddf20-0784-bb40-955f-e746933a5b49' date '1 May 2015' time '10:27:44.608406 am' author 'bliznjan' ancestors ((name 'DynaCASE-SimulationGUI-bliznjan.1' message 'created simulation gui
-' id '546afa39-e73a-5745-b0d2-18547a0fb56c' date '29 April 2015' time '1:13:30 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())
+(name 'DynaCASE-SimulationGUI-bliznjan.3' message 'minor refactoring' id '442df4c5-2edb-d747-b5df-dcec8cba4426' date '4 May 2015' time '2:18:42.945359 pm' author 'bliznjan' ancestors ((name 'DynaCASE-SimulationGUI-bliznjan.2' message 'reverts simulation when closed, minor code refactoring
+' id 'ca8b45fc-3ee0-50ab-a8c8-30e817eb5e3a' date '1 May 2015' time '10:27:50 am' author 'bliznjan' ancestors ((name 'DynaCASE-SimulationGUI-bliznjan.1' message 'created simulation gui
+' id '546afa39-e73a-5745-b0d2-18547a0fb56c' date '29 April 2015' time '1:13:30 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())) stepChildren ())
