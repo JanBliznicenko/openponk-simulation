@@ -1,3 +1,3 @@
 private - accessing
 valueForAction
-	^ stepSelect value
+	^ self subclassResponsibility

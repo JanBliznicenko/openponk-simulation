@@ -4,12 +4,14 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "bliznjan 5/5/2015 13:15",
+	"commentStamp" : "bliznjan 5/5/2015 12:32",
 	"instvars" : [
-		"element",
-		"priority",
-		"diagramSimulator" ],
-	"name" : "DCToken",
+		"stepFrom",
+		"stepIn",
+		"stepPriority",
+		"stepSelect",
+		"model" ],
+	"name" : "DCModelSimulator",
 	"pools" : [
 		 ],
 	"super" : "DCSimulator",

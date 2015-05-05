@@ -1,5 +1,3 @@
 actions
 close
-	self
-		stop;
-		loadState
+	self stop

@@ -11,5 +11,5 @@
 	"name" : "DCDiagramSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCSimulator",
+	"super" : "DCModelSimulator",
 	"type" : "normal" }

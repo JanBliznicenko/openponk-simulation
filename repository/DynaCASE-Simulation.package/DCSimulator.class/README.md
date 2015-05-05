@@ -1,11 +1,10 @@
-I'm abstract class representing handler for simulation with direct connection to model object. I also contain other items.
+I'm a root class in simulators hierarchy above model.
+I handle stepping and repeating steps and contains announcers.
 
 Protocol stepping contains settings for steps, actions contain executing steps.
-Stepping settings are divided into categories, each of these categories produces block which returns collection based on previous category.
 
     Instance Variables
-	model:		Simulated object in model layer.
-	stepFrom:		stepping settings block - sets source of collection
-	stepIn:		stepping settings block - sets order of items in collection
-	stepPriority:		stepping settings block - sets filtering based on priority
-	stepSelect:		stepping settings block - enables to pick only certain amount of items
+	actions:		collection of blocks of actions taken with each step
+	announcer:		Announcer instance
+	delayInMilliseconds:		integer containing delay between steps
+	shouldRun:		boolean telling whether running should continue
