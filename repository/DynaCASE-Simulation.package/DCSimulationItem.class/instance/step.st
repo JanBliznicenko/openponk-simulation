@@ -1,4 +1,4 @@
-stepping
+actions
 step
 	"makes all actions"
 

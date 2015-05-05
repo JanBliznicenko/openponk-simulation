@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "bliznjan 5/5/2015 13:15",
 	"instvars" : [
 		"element",
 		"priority",
@@ -12,5 +12,5 @@
 	"name" : "DCToken",
 	"pools" : [
 		 ],
-	"super" : "DCSimulatorObject",
+	"super" : "DCSimulationItem",
 	"type" : "normal" }

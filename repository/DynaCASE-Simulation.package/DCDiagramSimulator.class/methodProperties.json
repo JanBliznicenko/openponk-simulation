@@ -1,16 +1,16 @@
 {
 	"class" : {
-		"initialize" : "bliznjan 5/1/2015 10:30:46",
 		"model:" : "bliznjan 5/1/2015 10:30:46" },
 	"instance" : {
-		"createElementFrom:" : "bliznjan 5/1/2015 10:30:46",
+		"createElementFrom:" : "bliznjan 5/5/2015 11:24",
 		"diagramSimulator" : "bliznjan 5/1/2015 10:30:46",
 		"elements" : "bliznjan 5/1/2015 10:30:46",
 		"elementsDo:" : "bliznjan 5/1/2015 10:30:46",
 		"fromAllElements" : "bliznjan 5/1/2015 10:30:46",
 		"fromSimulableElements" : "bliznjan 5/1/2015 10:30:46",
 		"fromSteppableElements" : "bliznjan 5/1/2015 10:30:46",
-		"initialize" : "bliznjan 5/1/2015 10:30:46",
+		"initialize" : "bliznjan 5/5/2015 11:35",
+		"initializeClassMapping" : "bliznjan 5/5/2015 11:34",
 		"isSimulable" : "bliznjan 5/1/2015 10:30:46",
 		"isSteppable" : "bliznjan 5/1/2015 10:30:46",
 		"loadItems" : "bliznjan 5/1/2015 10:30:46",
@@ -22,6 +22,7 @@
 		"simulableElements" : "bliznjan 5/1/2015 10:30:46",
 		"simulableElementsDo:" : "bliznjan 5/1/2015 10:30:46",
 		"simulableTokens" : "bliznjan 5/1/2015 10:30:46",
+		"simulatorClassFor:" : "bliznjan 5/5/2015 11:27",
 		"simulatorOf:" : "bliznjan 5/1/2015 10:30:46",
 		"steppableElements" : "bliznjan 5/1/2015 10:30:46",
 		"steppableTokens" : "bliznjan 5/1/2015 10:30:46",

@@ -4,13 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "bliznjan 5/5/2015 12:29",
 	"instvars" : [
 		"shouldRun",
 		"announcer",
 		"actions",
 		"delayInMilliseconds" ],
-	"name" : "DCSimulatorObject",
+	"name" : "DCSimulationItem",
 	"pools" : [
 		 ],
 	"super" : "Object",

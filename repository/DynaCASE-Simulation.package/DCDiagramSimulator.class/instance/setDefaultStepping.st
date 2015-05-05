@@ -1,4 +1,4 @@
-initialization
+stepping
 setDefaultStepping
 	"sets default stepping settings"
 

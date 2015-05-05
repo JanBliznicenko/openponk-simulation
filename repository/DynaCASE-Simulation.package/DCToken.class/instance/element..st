@@ -1,4 +1,4 @@
 accessing
 element: anElement
 	element := anElement.
-	self diagramSimulator: (element ifNotNil: [ element diagram ] ifNil: [ nil ])
+	self diagramSimulator: (element ifNotNil: [ element diagramSimulator ] ifNil: [ nil ])

@@ -1,4 +1,4 @@
-stepping
+actions
 repeatWithoutDelay
 	"repeats step until finished or stopped"
 

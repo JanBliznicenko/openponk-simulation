@@ -1,3 +1,3 @@
-private - accessing
+accessing
 diagram
 	^ self diagramSimulator model

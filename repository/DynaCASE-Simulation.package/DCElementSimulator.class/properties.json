@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "bliznjan 5/5/2015 13:09",
 	"instvars" : [
 		"incoming",
 		"outgoing",
@@ -15,5 +15,5 @@
 	"name" : "DCElementSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCEnumerableSimulator",
+	"super" : "DCSimulator",
 	"type" : "normal" }

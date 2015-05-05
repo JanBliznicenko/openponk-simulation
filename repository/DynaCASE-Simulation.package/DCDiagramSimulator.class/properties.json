@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		"ClassMapping" ],
-	"commentStamp" : "",
+	"commentStamp" : "bliznjan 5/5/2015 13:06",
 	"instvars" : [
 		"elements",
 		"simulableElements" ],
 	"name" : "DCDiagramSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCEnumerableSimulator",
+	"super" : "DCSimulator",
 	"type" : "normal" }

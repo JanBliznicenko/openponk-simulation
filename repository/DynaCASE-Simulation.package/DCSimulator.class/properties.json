@@ -4,15 +4,15 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "bliznjan 5/5/2015 12:32",
 	"instvars" : [
 		"stepFrom",
 		"stepIn",
 		"stepPriority",
 		"stepSelect",
 		"model" ],
-	"name" : "DCEnumerableSimulator",
+	"name" : "DCSimulator",
 	"pools" : [
 		 ],
-	"super" : "DCSimulatorObject",
+	"super" : "DCSimulationItem",
 	"type" : "normal" }

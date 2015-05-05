@@ -1,4 +1,4 @@
-stepping
+actions
 doAction: anIndex
 	"makes selected action"
 

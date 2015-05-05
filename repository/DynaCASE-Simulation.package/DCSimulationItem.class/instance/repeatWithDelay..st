@@ -1,4 +1,4 @@
-stepping
+actions
 repeatWithDelay: delay
 	"repeats step until finished or stopped, waits for given time between every step"
 

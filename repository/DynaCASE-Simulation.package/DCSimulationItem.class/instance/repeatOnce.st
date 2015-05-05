@@ -1,4 +1,4 @@
-stepping
+actions
 repeatOnce
 	"steps once"
 

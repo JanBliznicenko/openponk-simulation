@@ -1,4 +1,4 @@
-stepping
+actions
 repeat
 	"repeats step until finished or stopped, waits for delay between every step"
 
