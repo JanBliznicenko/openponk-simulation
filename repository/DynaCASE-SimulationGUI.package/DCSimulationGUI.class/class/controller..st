@@ -4,7 +4,7 @@ controller: aDiagramController
 
 	| gui |
 	gui := self allInstances
-		detect: [ :anInstance | anInstance isOpen and: [ anInstance diagram = aDiagramController model ] ]
+		detect: [ :anyInstance | anyInstance isOpen and: [ anyInstance controller == aDiagramController ] ]
 		ifNone: [ self newForController: aDiagramController ].
 	gui activate.	"causes simulation GUI to get on top of screen"
 	^ gui
