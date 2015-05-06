@@ -6,4 +6,4 @@ fromSteppableTokens
 	
 	steps steppable tokens"
 
-	stepFrom := [ self steppableTokens ]
+	stepItemsFrom := [ self steppableTokens ]

@@ -6,4 +6,4 @@ fromSimulableTokens
 	
 	steps simulable tokens"
 
-	stepFrom := [ self simulableTokens ]
+	stepItemsFrom := [ self simulableTokens ]

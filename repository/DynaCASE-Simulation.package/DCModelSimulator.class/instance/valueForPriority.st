@@ -1,3 +1,3 @@
 private - accessing
 valueForPriority
-	^ stepFrom value
+	^ stepItemsFrom value

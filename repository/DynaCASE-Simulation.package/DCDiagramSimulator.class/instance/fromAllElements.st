@@ -6,4 +6,4 @@ fromAllElements
 	
 	steps all elements"
 
-	stepFrom := [ self elements ]
+	stepItemsFrom := [ self elements ]

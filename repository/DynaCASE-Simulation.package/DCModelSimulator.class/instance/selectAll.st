@@ -6,4 +6,4 @@ selectAll
 	
 	steps all simulators"
 
-	stepSelect := [ self valueForSelect ]
+	stepItemsSelect := [ self valueForSelect ]

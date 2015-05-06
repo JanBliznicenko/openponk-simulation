@@ -6,11 +6,11 @@
 		 ],
 	"commentStamp" : "bliznjan 5/5/2015 12:32",
 	"instvars" : [
-		"stepFrom",
-		"stepIn",
-		"stepPriority",
-		"stepSelect",
-		"model" ],
+		"model",
+		"stepItemsFrom",
+		"stepItemsOrder",
+		"stepItemsPriority",
+		"stepItemsSelect" ],
 	"name" : "DCModelSimulator",
 	"pools" : [
 		 ],

@@ -6,4 +6,4 @@ fromSelf
 	
 	steps self"
 
-	stepFrom := self asOrderedCollection
+	stepItemsFrom := self asOrderedCollection

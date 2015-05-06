@@ -6,4 +6,4 @@ fromAllTokens
 	
 	steps all tokens"
 
-	stepFrom := [ self tokens ]
+	stepItemsFrom := [ self tokens ]

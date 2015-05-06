@@ -6,7 +6,7 @@ selectLast: amount
 	
 	steps only last amount of simulators"
 
-	stepSelect := [ 
+	stepItemsSelect := [ 
 	| collection |
 	collection := self valueForSelect.
 	collection last: (amount min: collection size) ]

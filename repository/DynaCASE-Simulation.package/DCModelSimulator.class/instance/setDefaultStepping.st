@@ -5,5 +5,5 @@ setDefaultStepping
 	super setDefaultStepping.
 	self
 		priorityAny;
-		inPrioritisedOrder;
+		orderByPriority;
 		selectAll

@@ -2,7 +2,7 @@ stepping
 selectLast
 	"stepping settings
 	before: in
-	after: action
+	after: actions
 	
 	steps only the last one simulator"
 

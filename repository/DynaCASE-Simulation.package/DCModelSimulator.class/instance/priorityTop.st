@@ -6,7 +6,7 @@ priorityTop
 	
 	steps only simulators with top priority"
 
-	stepPriority := [ 
+	stepItemsPriority := [ 
 	| maxPriority fromCol |
 	fromCol := self valueForPriority.
 	fromCol

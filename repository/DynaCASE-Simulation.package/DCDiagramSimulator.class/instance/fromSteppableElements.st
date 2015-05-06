@@ -6,4 +6,4 @@ fromSteppableElements
 	
 	steps steppable elements"
 
-	stepFrom := [ self steppableElements ]
+	stepItemsFrom := [ self steppableElements ]

@@ -1,3 +1,3 @@
 private - accessing
 valueForSelect
-	^ stepIn value
+	^ stepItemsOrder value

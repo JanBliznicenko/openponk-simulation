@@ -6,7 +6,7 @@ selectFrom: firstIndex to: lastIndex
 	
 	steps simulators within range"
 
-	stepSelect := [ 
+	stepItemsSelect := [ 
 	| collection |
 	collection := self valueForSelect.
 	collection copyFrom: firstIndex to: (lastIndex min: collection size) ]

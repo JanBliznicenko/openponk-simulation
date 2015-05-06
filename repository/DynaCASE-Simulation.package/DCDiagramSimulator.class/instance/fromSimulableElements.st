@@ -6,4 +6,4 @@ fromSimulableElements
 	
 	steps simulable elements"
 
-	stepFrom := [ self simulableElements ]
+	stepItemsFrom := [ self simulableElements ]
