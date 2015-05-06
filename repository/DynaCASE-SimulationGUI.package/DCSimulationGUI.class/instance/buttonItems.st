@@ -5,11 +5,16 @@ buttonItems
 	^ OrderedCollection
 		with: [ :item | 
 			item
-				name: 'Load';
-				description: 'Load from model';
-				action: [ self simulator loadState ] ]
+				name: 'Full reload';
+				description: 'Keep current state and reload structure of elements';
+				action: [ self reloadController ] ]
 		with: [ :item | 
 			item
-				name: 'Save';
-				description: 'Save into model';
-				action: [ self simulator saveState ] ]
+				name: 'Load state';
+				description: 'Load state from model from before simulate';
+				action: [ self diagramSimulator loadState ] ]
+		with: [ :item | 
+			item
+				name: 'Save state';
+				description: 'Save current state into model';
+				action: [ self diagramSimulator saveState ] ]

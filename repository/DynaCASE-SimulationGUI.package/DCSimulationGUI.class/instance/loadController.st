@@ -6,8 +6,4 @@ loadController
 	self
 		title: 'Simulation of ' , diagramController model name;
 		openWithSpec.
-	self window
-		whenClosedDo: [ 
-			diagramSimulator
-				stop;
-				loadState ]
+	self window whenClosedDo: [ self diagramSimulator close ]
