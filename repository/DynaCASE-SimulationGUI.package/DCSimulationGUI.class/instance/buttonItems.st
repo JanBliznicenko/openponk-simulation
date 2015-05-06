@@ -6,7 +6,7 @@ buttonItems
 		with: [ :item | 
 			item
 				name: 'Full reload';
-				description: 'Keep current state and reload structure of elements';
+				description: 'Load state and recreate structure of elements';
 				action: [ self reloadController ] ]
 		with: [ :item | 
 			item
