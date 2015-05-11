@@ -5,4 +5,4 @@ model: aDiagram
 	super model: aDiagram.
 	self
 		loadItems;
-		loadState
+		saveState

@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"isAbstract" : "bliznjan 5/10/2015 15:27" },
+	"instance" : {
+		"testFromAllTokens" : "bliznjan 5/10/2015 22:58",
+		"testFromSelf" : "bliznjan 5/10/2015 22:59",
+		"testFromSimulableTokens" : "bliznjan 5/10/2015 22:58",
+		"testFromSteppableTokens" : "bliznjan 5/10/2015 22:58",
+		"testOrderAny" : "bliznjan 5/10/2015 23:09",
+		"testOrderByPriority" : "bliznjan 5/11/2015 00:13",
+		"testOrderByReversedPriority" : "bliznjan 5/11/2015 00:14",
+		"testPriorityAny" : "bliznjan 5/10/2015 23:21",
+		"testPriorityTop" : "bliznjan 5/10/2015 23:38",
+		"testSelectAll" : "bliznjan 5/11/2015 00:12",
+		"testSelectFirst" : "bliznjan 5/11/2015 00:10",
+		"testSelectFirstN" : "bliznjan 5/11/2015 00:16",
+		"testSelectFromTo" : "bliznjan 5/11/2015 00:21",
+		"testSelectLast" : "bliznjan 5/11/2015 00:11",
+		"testSelectLastN" : "bliznjan 5/11/2015 00:18",
+		"testSelectOne" : "bliznjan 5/11/2015 00:19" } }

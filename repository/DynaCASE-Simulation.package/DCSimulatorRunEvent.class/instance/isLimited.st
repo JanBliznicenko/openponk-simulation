@@ -1,3 +1,3 @@
 accessing
 isLimited
-	^ limited
+	^ repeatTimes notNil

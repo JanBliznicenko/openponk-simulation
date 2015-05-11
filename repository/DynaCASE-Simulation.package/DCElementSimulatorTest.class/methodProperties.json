@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classForTesting" : "bliznjan 5/10/2015 18:56",
+		"prepareOneSimulable" : "bliznjan 5/10/2015 22:18",
+		"setUp" : "bliznjan 5/10/2015 23:32",
+		"testAccessing" : "bliznjan 5/10/2015 23:32",
+		"testConnected" : "bliznjan 5/10/2015 20:44",
+		"testStates" : "bliznjan 5/10/2015 20:27",
+		"testStep" : "bliznjan 5/10/2015 21:39" } }

@@ -6,4 +6,4 @@ orderAny
 	
 	steps simulators in undetermined order - takes least time"
 
-	stepItemsOrder := [ self valueForOrder ]
+	stepItemsOrder := [ self itemsForOrder ]

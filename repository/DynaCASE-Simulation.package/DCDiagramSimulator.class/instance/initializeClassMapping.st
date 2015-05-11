@@ -1,3 +1,3 @@
 initialization
 initializeClassMapping
-	ClassMapping := Dictionary new
+	self class initializeClassMapping

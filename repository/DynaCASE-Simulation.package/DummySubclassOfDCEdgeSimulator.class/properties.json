@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-Simulation-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"steppable" ],
+	"name" : "DummySubclassOfDCEdgeSimulator",
+	"pools" : [
+		 ],
+	"super" : "DCEdgeSimulator",
+	"type" : "normal" }

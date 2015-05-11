@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "bliznjan 5/10/2015 23:29",
+		"isSimulable" : "bliznjan 5/10/2015 21:40",
+		"isSteppable" : "bliznjan 5/10/2015 21:40",
+		"loadState" : "bliznjan 5/10/2015 20:25",
+		"saveState" : "bliznjan 5/10/2015 20:25",
+		"steppable:" : "bliznjan 5/10/2015 21:41" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-Simulation-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"diagram" ],
+	"name" : "DCDiagramSimulatorTest",
+	"pools" : [
+		 ],
+	"super" : "DCModelSimulatorTest",
+	"type" : "normal" }

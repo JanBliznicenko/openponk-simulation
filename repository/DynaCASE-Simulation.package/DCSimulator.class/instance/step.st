@@ -5,7 +5,7 @@ step
 	| itemsToAct |
 	self isSteppable
 		ifFalse: [ ^ self ].
-	itemsToAct := self valueForAction.
+	itemsToAct := self itemsForAction.
 	self announce: (DCSimulatorWillStep simulator: self).
 	actions
 		withIndexDo: [ :action :index | 

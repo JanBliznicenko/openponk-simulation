@@ -3,7 +3,7 @@ doAction: anIndex
 	"makes selected action"
 
 	| itemsToAct action |
-	itemsToAct := self valueForAction.
+	itemsToAct := self itemsForAction.
 	action := actions at: anIndex.
 	self announce: (DCSimulatorWillDoAction simulator: self action: action index: anIndex).
 	itemsToAct do: action.

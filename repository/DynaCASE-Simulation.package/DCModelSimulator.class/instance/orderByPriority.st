@@ -6,4 +6,7 @@ orderByPriority
 	
 	steps simulators ordered by priority"
 
-	stepItemsOrder := [ (SortedCollection sortBlock: self sortBlock) addAll: self valueForOrder ]
+	stepItemsOrder := [ 
+	(SortedCollection sortBlock: self sortBlock)
+		addAll: self itemsForOrder;
+		yourself ]

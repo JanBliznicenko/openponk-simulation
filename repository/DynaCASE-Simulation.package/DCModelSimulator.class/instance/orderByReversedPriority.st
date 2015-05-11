@@ -6,4 +6,7 @@ orderByReversedPriority
 	
 	steps simulators ordered by priority from least to top"
 
-	stepItemsOrder := [ (SortedCollection sortBlock: self reversedSortBlock) addAll: self valueForOrder ]
+	stepItemsOrder := [ 
+	(SortedCollection sortBlock: self reversedSortBlock)
+		addAll: self itemsForOrder;
+		yourself ]

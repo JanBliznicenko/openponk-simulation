@@ -6,4 +6,4 @@ orderRandomized
 	
 	steps simulators in random (shuffled) order"
 
-	stepItemsOrder := [ self valueForOrder asOrderedCollection shuffle ]
+	stepItemsOrder := [ self itemsForOrder asOrderedCollection shuffle ]

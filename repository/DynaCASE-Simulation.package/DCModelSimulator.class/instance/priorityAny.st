@@ -6,4 +6,4 @@ priorityAny
 	
 	steps simulators with any priority"
 
-	stepItemsPriority := [ self valueForPriority ]
+	stepItemsPriority := [ self itemsForPriority ]

@@ -8,8 +8,8 @@ priorityTop
 
 	stepItemsPriority := [ 
 	| maxPriority fromCol |
-	fromCol := self valueForPriority.
+	fromCol := self itemsForPriority.
 	fromCol
 		ifNotEmpty: [ 
-			maxPriority := fromCol inject: fromCol anyOne into: [ :max :item | item priority max: max ].
+			maxPriority := fromCol inject: fromCol anyOne priority into: [ :max :item | item priority max: max ].
 			fromCol select: [ :item | item priority = maxPriority ] ] ]

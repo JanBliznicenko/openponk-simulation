@@ -6,7 +6,7 @@ repeat
 	shouldRun
 		ifTrue: [ ^ self ].	"it is already running"
 	delay := self delay.
-	self announce: (DCSimulatorWillRun simulator: self unlimitedWithDelay: delay).
+	self announce: (DCSimulatorWillRun simulator: self delay: delay).
 	shouldRun := true.
 	[ 
 	[ shouldRun and: [ self isSteppable ] ]
@@ -15,4 +15,4 @@ repeat
 				step;
 				waitFor: delay ].
 	shouldRun := false.
-	self announce: (DCSimulatorStoppedRun simulator: self unlimitedWithDelay: delay) ] fork
+	self announce: (DCSimulatorStoppedRun simulator: self delay: delay) ] fork

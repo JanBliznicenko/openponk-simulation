@@ -1,0 +1,14 @@
+{
+	"category" : "DynaCASE-Simulation-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"state" ],
+	"name" : "DummyDCElement",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,9 +1,9 @@
 {
 	"category" : "DynaCASE-Simulation-Simulators",
 	"classinstvars" : [
-		 ],
-	"classvars" : [
 		"ClassMapping" ],
+	"classvars" : [
+		 ],
 	"commentStamp" : "bliznjan 5/5/2015 13:06",
 	"instvars" : [
 		"elements",

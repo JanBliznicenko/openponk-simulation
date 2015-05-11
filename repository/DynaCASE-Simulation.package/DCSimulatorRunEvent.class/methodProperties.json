@@ -1,11 +1,10 @@
 {
 	"class" : {
-		"simulator:repeatTimes:delay:" : "bliznjan 5/6/2015 15:11:26",
-		"simulator:unlimitedWithDelay:" : "bliznjan 5/6/2015 15:11:26" },
+		"simulator:delay:" : "bliznjan 5/10/2015 14:29",
+		"simulator:delay:repeatTimes:" : "bliznjan 5/10/2015 14:30" },
 	"instance" : {
-		"delay" : "bliznjan 5/6/2015 15:11:26",
-		"delay:" : "bliznjan 5/6/2015 15:11:26",
-		"isLimited" : "bliznjan 5/6/2015 15:11:26",
-		"repeatTimes" : "bliznjan 5/6/2015 15:11:26",
-		"repeatTimes:" : "bliznjan 5/6/2015 15:11:26",
-		"unlimited" : "bliznjan 5/6/2015 15:11:26" } }
+		"delay" : "bliznjan 5/6/2015 22:37:10",
+		"delay:" : "bliznjan 5/6/2015 22:37:10",
+		"isLimited" : "bliznjan 5/10/2015 14:28",
+		"repeatTimes" : "bliznjan 5/6/2015 22:37:10",
+		"repeatTimes:" : "bliznjan 5/10/2015 14:28" } }

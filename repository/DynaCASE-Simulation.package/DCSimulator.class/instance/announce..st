@@ -1,3 +1,3 @@
 announcing
 announce: anAnnouncement
-	self announcer announce: anAnnouncement
+	announcer announce: anAnnouncement

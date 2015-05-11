@@ -8,5 +8,5 @@ selectFrom: firstIndex to: lastIndex
 
 	stepItemsSelect := [ 
 	| collection |
-	collection := self valueForSelect.
+	collection := self itemsForSelect.
 	collection copyFrom: firstIndex to: (lastIndex min: collection size) ]

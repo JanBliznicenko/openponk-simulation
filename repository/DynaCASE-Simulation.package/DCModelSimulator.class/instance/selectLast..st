@@ -8,5 +8,5 @@ selectLast: amount
 
 	stepItemsSelect := [ 
 	| collection |
-	collection := self valueForSelect.
+	collection := self itemsForSelect.
 	collection last: (amount min: collection size) ]

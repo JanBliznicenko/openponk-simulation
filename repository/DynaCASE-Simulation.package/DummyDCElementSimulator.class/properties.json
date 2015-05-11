@@ -1,0 +1,22 @@
+{
+	"category" : "DynaCASE-Simulation-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"steppable",
+		"incoming",
+		"outgoing",
+		"loaded",
+		"diagramSimulator",
+		"loadedConnected",
+		"state",
+		"model",
+		"tokens" ],
+	"name" : "DummyDCElementSimulator",
+	"pools" : [
+		 ],
+	"super" : "DummyDCSimulator",
+	"type" : "normal" }
