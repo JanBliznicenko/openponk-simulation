@@ -1,3 +1,3 @@
 accessing
 diagram
-	^ diagramSimulator model
+	^ self diagramController model

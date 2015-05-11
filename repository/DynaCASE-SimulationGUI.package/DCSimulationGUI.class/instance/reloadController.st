@@ -1,6 +1,7 @@
-private - hooks
+updating
 reloadController
-	"creates new simulator for current diagramController"
-
-	self diagramSimulator loadState.
-	self loadSimulation
+	| controller |
+	controller := self diagramController.
+	self
+		close;
+		diagramController: controller

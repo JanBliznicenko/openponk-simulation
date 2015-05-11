@@ -1,5 +1,5 @@
 instance creation
 newForController: aDiagramController
 	^ self new
-		controller: aDiagramController;
+		diagramController: aDiagramController;
 		yourself

@@ -1,4 +1,4 @@
 accessing
-controller: aDiagramController
+diagramController: aDiagramController
 	diagramController := aDiagramController.
 	self initializeWithController
