@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addAction:" : "bliznjan 5/10/2015 15:47",
+		"addAction:" : "bliznjan 5/11/2015 14:11",
 		"addFirstAction:" : "bliznjan 5/10/2015 15:47",
 		"announce:" : "bliznjan 5/10/2015 21:57",
 		"delay" : "bliznjan 5/6/2015 22:37:10",
@@ -11,7 +11,7 @@
 		"diagramSimulator" : "bliznjan 5/6/2015 22:37:10",
 		"doAction:" : "bliznjan 5/10/2015 22:57",
 		"fromSelf" : "bliznjan 5/10/2015 22:53",
-		"initialize" : "bliznjan 5/10/2015 15:40",
+		"initialize" : "bliznjan 5/11/2015 14:13",
 		"isFinished" : "bliznjan 5/6/2015 22:37:10",
 		"isSimulable" : "bliznjan 5/6/2015 22:37:10",
 		"isSteppable" : "bliznjan 5/6/2015 22:37:10",
@@ -20,7 +20,8 @@
 		"repeatOnce" : "bliznjan 5/6/2015 22:37:10",
 		"repeatTimes:" : "bliznjan 5/10/2015 14:30",
 		"repeatWithDelay:" : "bliznjan 5/6/2015 22:37:10",
-		"setDefaultStepping" : "bliznjan 5/10/2015 22:54",
+		"resetActions" : "bliznjan 5/11/2015 13:50",
+		"setDefaultStepping" : "bliznjan 5/11/2015 14:13",
 		"step" : "bliznjan 5/10/2015 22:57",
 		"stop" : "bliznjan 5/6/2015 22:37:10",
 		"waitFor:" : "bliznjan 5/6/2015 22:37:10",
