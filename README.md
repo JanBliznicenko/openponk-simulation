@@ -5,8 +5,7 @@ Simulations extension for DynaCASE tool
 Copy code at the bottom into Pharo then run it without any modification.
 ## For development
 - 1)
-You need to clone local git repository  
-(make sure it's `git@github` and not `https://...`)
+You need GIT to clone local git repository with following line:
 ```
 git clone git@github.com:bliznjan/dynacase-simulation.git /my/path/to/dynacase-simulation
 ```
