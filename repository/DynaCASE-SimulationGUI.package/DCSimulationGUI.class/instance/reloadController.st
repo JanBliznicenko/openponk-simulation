@@ -1,7 +1,10 @@
 updating
 reloadController
+	"reloads elements from diagramController"
+
 	| controller |
 	controller := self diagramController.
 	self
-		close;
-		diagramController: controller
+		closed;
+		diagramController: controller;
+		activate

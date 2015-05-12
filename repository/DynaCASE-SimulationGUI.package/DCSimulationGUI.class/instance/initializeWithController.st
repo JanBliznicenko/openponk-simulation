@@ -6,7 +6,4 @@ initializeWithController
 	self diagram
 		when: DCElementAdded do: [ self reloadController ];
 		when: DCElementRemoved do: [ self reloadController ].
-	self
-		title: 'Simulation of ' , self diagram name;
-		openWithSpec.
-	self window whenClosedDo: [ self close ]
+	self title: 'Simulation of ' , self diagram name

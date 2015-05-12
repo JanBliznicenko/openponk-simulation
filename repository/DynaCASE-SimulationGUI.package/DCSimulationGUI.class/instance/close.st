@@ -1,6 +1,7 @@
 windows
 close
-	self diagram announcer unsubscribe: self.
-	self diagramSimulator loadState.
-	diagramController := nil.
-	diagramSimulator := nil
+	"ends simulation and closes window"
+
+	"implementation detail: it ends simulation by event triggered by closing window"
+
+	self window close
