@@ -1,0 +1,35 @@
+{
+	"instance" : {
+		"buttons" : "bliznjan 5/12/2015 17:54:30",
+		"loadSimulation" : "bliznjan 5/12/2015 17:54:30",
+		"close" : "bliznjan 5/12/2015 17:54:30",
+		"initializeWidgets" : "bliznjan 5/12/2015 17:54:30",
+		"initialize" : "bliznjan 5/12/2015 17:54:30",
+		"simulatorClass" : "bliznjan 5/12/2015 17:54:30",
+		"diagramController" : "bliznjan 5/12/2015 17:54:30",
+		"buttonItems" : "bliznjan 5/12/2015 17:54:30",
+		"windowMorph" : "bliznjan 5/12/2015 17:54:30",
+		"diagram" : "bliznjan 5/12/2015 17:54:30",
+		"diagramController:" : "bliznjan 5/12/2015 17:54:30",
+		"activate" : "bliznjan 5/12/2015 17:54:30",
+		"initializePresenter" : "bliznjan 5/12/2015 17:54:30",
+		"stepSimulatorOfController:" : "bliznjan 5/12/2015 17:54:30",
+		"initializeWithController" : "JanBliznicenko 9/8/2017 23:15",
+		"reloadController" : "bliznjan 5/12/2015 17:54:30",
+		"closed" : "bliznjan 5/12/2015 17:54:30",
+		"isOpen" : "bliznjan 5/12/2015 17:54:30",
+		"diagramSimulator" : "bliznjan 5/12/2015 17:54:30",
+		"initialExtent" : "bliznjan 5/12/2015 17:54:30"
+	},
+	"class" : {
+		"newForController:" : "bliznjan 5/12/2015 17:54:30",
+		"diagramController:" : "bliznjan 5/12/2015 17:54:30",
+		"initialize" : "JanBliznicenko 9/8/2017 23:13",
+		"initializeMenuItems" : "bliznjan 5/12/2015 17:54:30",
+		"simulableControllerClasses" : "bliznjan 5/12/2015 17:54:30",
+		"defaultSpec" : "bliznjan 5/12/2015 17:54:30",
+		"stepSimulatorOfController:" : "bliznjan 5/12/2015 17:54:30",
+		"initializeMenuButtons" : "bliznjan 5/12/2015 17:54:30",
+		"controllerClass" : "bliznjan 5/12/2015 17:54:30"
+	}
+}

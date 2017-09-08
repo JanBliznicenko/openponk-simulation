@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "bliznjan 5/5/2015 18:46",
+	"super" : "ComposableModel",
+	"category" : "OpenPonk-SimulationGUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"diagramSimulator",
+		"diagramController",
+		"buttons"
+	],
+	"name" : "OPSimulationGUI",
+	"type" : "normal"
+}

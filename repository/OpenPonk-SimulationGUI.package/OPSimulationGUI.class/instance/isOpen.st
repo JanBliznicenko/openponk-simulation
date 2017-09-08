@@ -1,0 +1,3 @@
+windows
+isOpen
+	^ self hasWindow
