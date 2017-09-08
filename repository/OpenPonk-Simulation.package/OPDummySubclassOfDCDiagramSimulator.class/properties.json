@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OPDiagramSimulator",
+	"category" : "OpenPonk-Simulation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OPDummySubclassOfDCDiagramSimulator",
+	"type" : "normal"
+}

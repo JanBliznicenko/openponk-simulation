@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "OPElementSimulatorTest",
+	"category" : "OpenPonk-Simulation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OPEdgeSimulatorTest",
+	"type" : "normal"
+}

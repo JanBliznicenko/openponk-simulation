@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "bliznjan 5/5/2015 18:57",
+	"super" : "OPSimulationEvent",
+	"category" : "OpenPonk-Simulation-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"simulator"
+	],
+	"name" : "OPSimulatorEvent",
+	"type" : "normal"
+}

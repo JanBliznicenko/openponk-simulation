@@ -1,0 +1,36 @@
+{
+	"instance" : {
+		"addTokens:" : "bliznjan 5/11/2015 15:32:49",
+		"removeAllTokens" : "bliznjan 5/11/2015 15:32:49",
+		"removeToken:" : "bliznjan 5/11/2015 15:32:49",
+		"initialize" : "bliznjan 5/11/2015 15:32:49",
+		"outgoing" : "bliznjan 5/11/2015 15:32:49",
+		"saveState" : "bliznjan 5/11/2015 15:32:49",
+		"setDefaultStepping" : "bliznjan 5/11/2015 15:32:49",
+		"outgoingDo:" : "bliznjan 5/11/2015 15:32:49",
+		"loadState" : "bliznjan 5/11/2015 15:32:49",
+		"addedOutgoing:" : "bliznjan 5/11/2015 15:32:49",
+		"addedIncoming:" : "bliznjan 5/11/2015 15:32:49",
+		"priority" : "bliznjan 5/11/2015 15:32:49",
+		"incomingDo:" : "bliznjan 5/11/2015 15:32:49",
+		"connectedDo:" : "bliznjan 5/11/2015 15:32:49",
+		"removeTokens:" : "bliznjan 5/11/2015 15:32:49",
+		"addIncoming:" : "bliznjan 5/11/2015 15:32:49",
+		"simulableTokens" : "bliznjan 5/11/2015 15:32:49",
+		"tokens" : "bliznjan 5/11/2015 15:32:49",
+		"model:" : "bliznjan 5/11/2015 15:32:49",
+		"tokensDo:" : "bliznjan 5/11/2015 15:32:49",
+		"diagramSimulator:" : "bliznjan 5/11/2015 15:32:49",
+		"addToken:" : "bliznjan 5/11/2015 15:32:49",
+		"loadConnectedItems" : "bliznjan 5/11/2015 15:32:49",
+		"priority:" : "bliznjan 5/11/2015 15:32:49",
+		"addOutgoing:" : "bliznjan 5/11/2015 15:32:49",
+		"steppableTokens" : "bliznjan 5/11/2015 15:32:49",
+		"tokenCount" : "bliznjan 5/11/2015 15:32:49",
+		"diagramSimulator" : "bliznjan 5/11/2015 15:32:49",
+		"incoming" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : {
+		"model:diagramSimulator:" : "bliznjan 5/11/2015 15:32:49"
+	}
+}

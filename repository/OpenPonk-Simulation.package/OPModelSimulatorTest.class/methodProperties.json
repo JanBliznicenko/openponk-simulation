@@ -1,0 +1,23 @@
+{
+	"instance" : {
+		"testSelectAll" : "bliznjan 5/11/2015 15:32:49",
+		"testSelectOne" : "bliznjan 5/11/2015 15:32:49",
+		"testOrderByReversedPriority" : "bliznjan 5/11/2015 15:32:49",
+		"testFromSelf" : "bliznjan 5/11/2015 15:32:49",
+		"testSelectLastN" : "bliznjan 5/11/2015 15:32:49",
+		"testSelectFromTo" : "bliznjan 5/11/2015 15:32:49",
+		"testFromSteppableTokens" : "bliznjan 5/11/2015 15:32:49",
+		"testSelectFirst" : "bliznjan 5/11/2015 15:32:49",
+		"testPriorityTop" : "bliznjan 5/11/2015 15:32:49",
+		"testPriorityAny" : "bliznjan 5/11/2015 15:32:49",
+		"testSelectFirstN" : "bliznjan 5/11/2015 15:32:49",
+		"testSelectLast" : "bliznjan 5/11/2015 15:32:49",
+		"testFromAllTokens" : "bliznjan 5/11/2015 15:32:49",
+		"testOrderByPriority" : "bliznjan 5/11/2015 15:32:49",
+		"testFromSimulableTokens" : "bliznjan 5/11/2015 15:32:49",
+		"testOrderAny" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : {
+		"isAbstract" : "JanBliznicenko 9/8/2017 23:04"
+	}
+}

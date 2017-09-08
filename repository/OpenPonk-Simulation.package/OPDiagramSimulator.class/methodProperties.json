@@ -1,0 +1,33 @@
+{
+	"instance" : {
+		"saveState" : "bliznjan 5/11/2015 15:32:49",
+		"initialize" : "bliznjan 5/11/2015 15:32:49",
+		"loadItems" : "bliznjan 5/11/2015 15:32:49",
+		"initializeClassMapping" : "bliznjan 5/11/2015 15:32:49",
+		"setDefaultStepping" : "bliznjan 5/11/2015 15:32:49",
+		"simulableElementsDo:" : "bliznjan 5/11/2015 15:32:49",
+		"elementsDo:" : "bliznjan 5/11/2015 15:32:49",
+		"loadState" : "bliznjan 5/11/2015 15:32:49",
+		"fromSteppableElements" : "bliznjan 5/11/2015 15:32:49",
+		"isSimulable" : "bliznjan 5/11/2015 15:32:49",
+		"steppableElements" : "bliznjan 5/11/2015 15:32:49",
+		"fromAllElements" : "bliznjan 5/11/2015 15:32:49",
+		"simulableTokens" : "bliznjan 5/11/2015 15:32:49",
+		"tokens" : "bliznjan 5/11/2015 15:32:49",
+		"isSteppable" : "bliznjan 5/11/2015 15:32:49",
+		"model:" : "bliznjan 5/11/2015 15:32:49",
+		"simulableElements" : "bliznjan 5/11/2015 15:32:49",
+		"loadSimulableElements" : "bliznjan 5/11/2015 15:32:49",
+		"elements" : "bliznjan 5/11/2015 15:32:49",
+		"createElementFrom:" : "bliznjan 5/11/2015 15:32:49",
+		"simulatorOf:" : "bliznjan 5/11/2015 15:32:49",
+		"steppableTokens" : "bliznjan 5/11/2015 15:32:49",
+		"fromSimulableElements" : "bliznjan 5/11/2015 15:32:49",
+		"tokenCount" : "bliznjan 5/11/2015 15:32:49",
+		"diagramSimulator" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : {
+		"initializeClassMapping" : "bliznjan 5/11/2015 15:32:49",
+		"classFor:" : "bliznjan 5/11/2015 15:32:49"
+	}
+}

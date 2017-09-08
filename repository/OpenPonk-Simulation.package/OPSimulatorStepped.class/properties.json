@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "bliznjan 5/5/2015 19:03",
+	"super" : "OPSimulatorStepEvent",
+	"category" : "OpenPonk-Simulation-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OPSimulatorStepped",
+	"type" : "normal"
+}

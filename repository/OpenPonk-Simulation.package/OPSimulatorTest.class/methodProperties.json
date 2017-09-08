@@ -1,0 +1,15 @@
+{
+	"instance" : {
+		"prepareOneSimulable" : "bliznjan 5/11/2015 15:32:49",
+		"testAnnounceStep" : "JanBliznicenko 9/8/2017 23:04",
+		"prepareOneSteppable" : "bliznjan 5/11/2015 15:32:49",
+		"setUp" : "bliznjan 5/11/2015 15:32:49",
+		"testInstanceCreation" : "bliznjan 5/11/2015 15:32:49",
+		"testDoAction" : "bliznjan 5/11/2015 15:32:49",
+		"prepareOneNotSteppable" : "bliznjan 5/11/2015 15:32:49",
+		"classForTesting" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : {
+		"isAbstract" : "JanBliznicenko 9/8/2017 23:04"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"instance" : {
+		"addAction:" : "bliznjan 5/11/2015 15:32:49",
+		"initialize" : "bliznjan 5/11/2015 15:32:49",
+		"setDefaultStepping" : "bliznjan 5/11/2015 15:32:49",
+		"repeatOnce" : "bliznjan 5/11/2015 15:32:49",
+		"delay" : "bliznjan 5/11/2015 15:32:49",
+		"repeat" : "JanBliznicenko 9/8/2017 23:04",
+		"isSimulable" : "bliznjan 5/11/2015 15:32:49",
+		"stop" : "bliznjan 5/11/2015 15:32:49",
+		"addFirstAction:" : "bliznjan 5/11/2015 15:32:49",
+		"isSteppable" : "bliznjan 5/11/2015 15:32:49",
+		"diagram" : "bliznjan 5/11/2015 15:32:49",
+		"fromSelf" : "bliznjan 5/11/2015 15:32:49",
+		"resetActions" : "bliznjan 5/11/2015 15:32:49",
+		"delay:" : "bliznjan 5/11/2015 15:32:49",
+		"repeatTimes:" : "JanBliznicenko 9/8/2017 23:04",
+		"repeatWithDelay:" : "bliznjan 5/11/2015 15:32:49",
+		"step" : "JanBliznicenko 9/8/2017 23:04",
+		"waitFor:" : "bliznjan 5/11/2015 15:32:49",
+		"itemsForAction" : "bliznjan 5/11/2015 15:32:49",
+		"doAction:" : "JanBliznicenko 9/8/2017 23:04",
+		"when:do:" : "bliznjan 5/11/2015 15:32:49",
+		"announce:" : "bliznjan 5/11/2015 15:32:49",
+		"isFinished" : "bliznjan 5/11/2015 15:32:49",
+		"diagramSimulator" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : { }
+}

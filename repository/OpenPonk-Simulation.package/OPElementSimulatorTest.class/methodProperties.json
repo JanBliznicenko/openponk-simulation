@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"testStep" : "bliznjan 5/11/2015 15:32:49",
+		"prepareOneSimulable" : "bliznjan 5/11/2015 15:32:49",
+		"setUp" : "JanBliznicenko 9/8/2017 23:04",
+		"testAccessing" : "JanBliznicenko 9/8/2017 23:04",
+		"testConnected" : "bliznjan 5/11/2015 15:32:49",
+		"classForTesting" : "JanBliznicenko 9/8/2017 23:04",
+		"testStates" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : { }
+}

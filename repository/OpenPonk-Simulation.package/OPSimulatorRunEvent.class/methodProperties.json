@@ -1,0 +1,13 @@
+{
+	"instance" : {
+		"repeatTimes" : "bliznjan 5/11/2015 15:32:49",
+		"isLimited" : "bliznjan 5/11/2015 15:32:49",
+		"delay" : "bliznjan 5/11/2015 15:32:49",
+		"repeatTimes:" : "bliznjan 5/11/2015 15:32:49",
+		"delay:" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : {
+		"simulator:delay:" : "bliznjan 5/11/2015 15:32:49",
+		"simulator:delay:repeatTimes:" : "bliznjan 5/11/2015 15:32:49"
+	}
+}

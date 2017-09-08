@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"steppable:" : "bliznjan 5/11/2015 15:32:49",
+		"initialize" : "bliznjan 5/11/2015 15:32:49",
+		"isSimulable" : "bliznjan 5/11/2015 15:32:49",
+		"isSteppable" : "bliznjan 5/11/2015 15:32:49",
+		"doState" : "bliznjan 5/11/2015 15:32:49",
+		"state" : "bliznjan 5/11/2015 15:32:49"
+	},
+	"class" : { }
+}

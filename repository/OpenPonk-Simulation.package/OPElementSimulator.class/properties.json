@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "bliznjan 5/5/2015 13:09",
+	"super" : "OPModelSimulator",
+	"category" : "OpenPonk-Simulation-Simulators",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"incoming",
+		"outgoing",
+		"tokens",
+		"startingModel",
+		"priority",
+		"diagramSimulator"
+	],
+	"name" : "OPElementSimulator",
+	"type" : "normal"
+}
