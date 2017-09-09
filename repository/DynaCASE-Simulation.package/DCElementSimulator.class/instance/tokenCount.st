@@ -1,3 +1,0 @@
-tokens
-tokenCount
-	^ tokens size

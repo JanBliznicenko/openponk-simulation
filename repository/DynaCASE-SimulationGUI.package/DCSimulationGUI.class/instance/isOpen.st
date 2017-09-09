@@ -1,3 +1,0 @@
-windows
-isOpen
-	^ self hasWindow

@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfOpenPonkSimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfOpenPonkSimulation",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
