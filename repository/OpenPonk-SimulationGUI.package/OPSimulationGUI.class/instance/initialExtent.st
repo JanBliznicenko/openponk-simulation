@@ -1,3 +1,3 @@
 initialization
 initialExtent
-	^ 400 @ 10
+	^ 446 @ 60

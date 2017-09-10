@@ -1,1 +1,2 @@
-(name 'OpenPonk-SimulationGUI-JanBliznicenko.1' message 'Simulation GUI can now be loaded (not working)' id '87b19ca3-1615-0d00-af2d-27bb061f8673' date '9 September 2017' time '12:14:35.657607 am' author 'JanBliznicenko' ancestors () stepChildren ())
+(name 'OpenPonk-SimulationGUI-JanBliznicenko.2' message 'modified toolbar button for current OP -> simulation can be opened' id 'd4e3117d-3215-0d00-a672-62f50b8f7ac8' date '10 September 2017' time '9:28:08.11106 am' author 'JanBliznicenko' ancestors ((name 'OpenPonk-SimulationGUI-JanBliznicenko.1' message 'Simulation GUI can now be loaded (not working)
+' id '0c0f173a-a564-527b-8a98-c5e5b789a30b' date '9 September 2017' time '12:14:37 am' author 'JanBliznicenko' ancestors () stepChildren ())) stepChildren ())
