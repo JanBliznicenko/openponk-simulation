@@ -1,24 +1,24 @@
 {
 	"instance" : {
-		"steppableTokens" : "bliznjan 5/11/2015 15:32:49",
-		"loadState" : "bliznjan 5/11/2015 15:32:49",
-		"model" : "bliznjan 5/11/2015 15:32:49",
-		"saveState" : "bliznjan 5/11/2015 15:32:49",
-		"tokenCount" : "bliznjan 5/11/2015 15:32:49",
-		"tokens" : "bliznjan 5/11/2015 15:32:49",
-		"model:" : "bliznjan 5/11/2015 15:32:49",
-		"diagramSimulator:" : "bliznjan 5/11/2015 15:32:49",
-		"steppable:" : "bliznjan 5/11/2015 15:32:49",
-		"initialize" : "JanBliznicenko 9/8/2017 23:04",
-		"isSimulable" : "bliznjan 5/11/2015 15:32:49",
-		"diagramSimulator" : "bliznjan 5/11/2015 15:32:49",
-		"loaded" : "bliznjan 5/11/2015 15:32:49",
-		"simulableTokens" : "bliznjan 5/11/2015 15:32:49",
-		"isSteppable" : "bliznjan 5/11/2015 15:32:49",
-		"state" : "bliznjan 5/11/2015 15:32:49",
-		"loadConnectedItems" : "bliznjan 5/11/2015 15:32:49"
+		"steppableTokens" : "JanBliznicenko 9/9/2017 00:13:52",
+		"loadState" : "JanBliznicenko 9/9/2017 00:13:52",
+		"model" : "JanBliznicenko 9/9/2017 00:13:52",
+		"saveState" : "JanBliznicenko 9/9/2017 00:13:52",
+		"tokenCount" : "JanBliznicenko 9/9/2017 00:13:52",
+		"tokens" : "JanBliznicenko 9/9/2017 00:13:52",
+		"model:" : "JanBliznicenko 9/9/2017 00:13:52",
+		"diagramSimulator:" : "JanBliznicenko 9/9/2017 00:13:52",
+		"steppable:" : "JanBliznicenko 9/9/2017 00:13:52",
+		"initialize" : "JanBliznicenko 9/9/2017 00:13:52",
+		"isSimulable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"diagramSimulator" : "JanBliznicenko 9/9/2017 00:13:52",
+		"loaded" : "JanBliznicenko 9/9/2017 00:13:52",
+		"simulableTokens" : "JanBliznicenko 9/9/2017 00:13:52",
+		"isSteppable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"state" : "JanBliznicenko 9/9/2017 00:13:52",
+		"loadConnectedItems" : "JanBliznicenko 9/9/2017 00:13:52"
 	},
 	"class" : {
-		"model:diagramSimulator:" : "bliznjan 5/11/2015 15:32:49"
+		"model:diagramSimulator:" : "JanBliznicenko 9/9/2017 00:13:52"
 	}
 }

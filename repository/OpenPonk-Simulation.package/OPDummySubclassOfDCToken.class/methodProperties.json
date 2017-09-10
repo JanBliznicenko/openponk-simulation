@@ -1,11 +1,11 @@
 {
 	"instance" : {
-		"steppable:" : "bliznjan 5/11/2015 15:32:49",
-		"initialize" : "bliznjan 5/11/2015 15:32:49",
-		"isSimulable" : "bliznjan 5/11/2015 15:32:49",
-		"isSteppable" : "bliznjan 5/11/2015 15:32:49",
-		"doState" : "bliznjan 5/11/2015 15:32:49",
-		"state" : "bliznjan 5/11/2015 15:32:49"
+		"steppable:" : "JanBliznicenko 9/9/2017 00:13:52",
+		"initialize" : "JanBliznicenko 9/9/2017 00:13:52",
+		"isSimulable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"isSteppable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"doState" : "JanBliznicenko 9/9/2017 00:13:52",
+		"state" : "JanBliznicenko 9/9/2017 00:13:52"
 	},
 	"class" : { }
 }

@@ -1,15 +1,15 @@
 {
 	"instance" : {
-		"prepareOneSimulable" : "bliznjan 5/11/2015 15:32:49",
-		"testAnnounceStep" : "JanBliznicenko 9/8/2017 23:04",
-		"prepareOneSteppable" : "bliznjan 5/11/2015 15:32:49",
-		"setUp" : "bliznjan 5/11/2015 15:32:49",
-		"testInstanceCreation" : "bliznjan 5/11/2015 15:32:49",
-		"testDoAction" : "bliznjan 5/11/2015 15:32:49",
-		"prepareOneNotSteppable" : "bliznjan 5/11/2015 15:32:49",
-		"classForTesting" : "bliznjan 5/11/2015 15:32:49"
+		"prepareOneSimulable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"testAnnounceStep" : "JanBliznicenko 9/9/2017 00:13:52",
+		"prepareOneSteppable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"setUp" : "JanBliznicenko 9/9/2017 00:13:52",
+		"testInstanceCreation" : "JanBliznicenko 9/9/2017 00:13:52",
+		"testDoAction" : "JanBliznicenko 9/9/2017 00:13:52",
+		"prepareOneNotSteppable" : "JanBliznicenko 9/9/2017 00:13:52",
+		"classForTesting" : "JanBliznicenko 9/9/2017 00:13:52"
 	},
 	"class" : {
-		"isAbstract" : "JanBliznicenko 9/8/2017 23:04"
+		"isAbstract" : "JanBliznicenko 9/9/2017 00:13:52"
 	}
 }
