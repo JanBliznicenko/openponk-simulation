@@ -1,2 +1,0 @@
-(name 'OpenPonk-Simulation-JanBliznicenko.2' message 'minor refactoring' id '9c642f76-3215-0d00-a671-ed7b0b8f7ac8' date '10 September 2017' time '9:26:12.60406 am' author 'JanBliznicenko' ancestors ((name 'OpenPonk-Simulation-JanBliznicenko.1' message 'Simulation package can now be loaded in OpenPonk
-' id '82662498-6758-5001-8594-71723e68ca35' date '9 September 2017' time '12:13:52 am' author 'JanBliznicenko' ancestors () stepChildren ())) stepChildren ())

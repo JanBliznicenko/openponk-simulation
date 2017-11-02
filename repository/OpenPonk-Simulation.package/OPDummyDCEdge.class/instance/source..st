@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 source: anElement
 	source := anElement

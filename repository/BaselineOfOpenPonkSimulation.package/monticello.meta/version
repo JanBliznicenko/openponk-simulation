@@ -1,3 +1,0 @@
-(name 'BaselineOfDynaCASESimulation-bliznjan.3' message 'added manifest class (with false positive code critics)' id '41051db1-8271-9248-9c17-b58c2b63a1b7' date '8 April 2015' time '11:49:55.720823 am' author 'bliznjan' ancestors ((name 'BaselineOfDynaCASESimulation-bliznjan.2' message 'simulation needs only model now
-' id 'ffd13a2d-3230-57ba-a3a3-8b0d00cafb27' date '31 March 2015' time '11:29:47 am' author 'bliznjan' ancestors ((name 'BaselineOfDynaCASESimulation-bliznjan.1' message 'added baseline
-' id '75d42388-5369-59e2-94c3-f67f34f0b2e4' date '24 March 2015' time '7:34:32 pm' author 'bliznjan' ancestors () stepChildren ())) stepChildren ())) stepChildren ())

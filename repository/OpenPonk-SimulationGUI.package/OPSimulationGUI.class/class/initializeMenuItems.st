@@ -1,6 +1,6 @@
 initialization
 initializeMenuItems
-	"this should add context menu (right-click on element on canvas) item"
+	"adds context menu (right-click on element on canvas) item"
 
 	self flag: #todo
 	"self simulableControllerClasses

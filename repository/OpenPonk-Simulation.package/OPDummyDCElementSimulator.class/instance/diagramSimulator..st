@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 diagramSimulator: aSimulator
 	diagramSimulator := aSimulator
