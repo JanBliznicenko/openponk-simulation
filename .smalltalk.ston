@@ -1,0 +1,24 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#platforms : [
+				#pharo
+			],
+			#baseline : 'SimulationGUI',
+			#directory : 'repository'
+		}
+	],
+	#testing : {
+		#coverage : {
+			#packages : [
+				'OpenPonk-SimulationGUI',
+				'OpenPonk-Simulation'
+
+			]
+		},
+		#packages : [
+			'OpenPonk-SimulationGUI',
+			'OpenPonk-Simulation'
+		]
+	}
+}
