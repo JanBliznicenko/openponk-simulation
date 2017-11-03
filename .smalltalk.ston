@@ -4,7 +4,7 @@ SmalltalkCISpec {
 			#platforms : [
 				#pharo
 			],
-			#baseline : 'SimulationGUI',
+			#baseline : 'OpenPonkSimulationGUI',
 			#directory : 'repository'
 		}
 	],
