@@ -1,4 +1,7 @@
 # OpenPonk: Simulation
+
+![Travis build status](https://api.travis-ci.org/bliznjan/openponk-simulation.svg)
+
 This repository adds simulations framework to the OpenPonk tool. 
 
 When behavior is defined for a metamodel, model could be simulated in a random, user-picked or otherwise defined order.
