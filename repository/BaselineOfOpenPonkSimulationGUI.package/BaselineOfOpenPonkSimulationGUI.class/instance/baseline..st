@@ -8,7 +8,7 @@ baseline: spec
 				with: [ spec repository: 'github://openponk/openponk:v0.1.0/repository' ].
 			spec
 				baseline: 'OpenPonkSimulation'
-				with: [ spec repository: 'github://bliznjan/openponk-simulation/repository' ].
+				with: [ spec repository: 'github://JanBliznicenko/openponk-simulation/repository' ].
 			spec
 				package: 'OpenPonk-SimulationGUI'
 				with: [ spec requires: #('OpenPonk' 'OpenPonkSimulation') ].
