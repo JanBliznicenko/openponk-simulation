@@ -5,7 +5,7 @@ baseline: spec
 		for: #common
 		do: [ spec
 				baseline: 'OpenPonk'
-				with: [ spec repository: 'github://openponk/openponk:v0.1.0/repository' ].
+				with: [ spec repository: 'github://openponk/openponk:v1.0.0/repository' ].
 			spec
 				baseline: 'OpenPonkSimulation'
 				with: [ spec repository: 'github://JanBliznicenko/openponk-simulation/repository' ].
