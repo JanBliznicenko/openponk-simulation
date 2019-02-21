@@ -1,0 +1,3 @@
+accessing
+diagramSimulator
+	^ self subclassResponsibility

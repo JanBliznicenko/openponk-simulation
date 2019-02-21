@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "OPModelSimulatorTest",
+	"category" : "OpenPonk-ModelSimulation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OPElementSimulatorTest",
+	"type" : "normal"
+}

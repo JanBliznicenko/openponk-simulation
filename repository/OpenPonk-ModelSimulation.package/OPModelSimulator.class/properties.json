@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "bliznjan 5/5/2015 12:32",
+	"super" : "OPSimulator",
+	"category" : "OpenPonk-ModelSimulation-Simulators",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"stepItemsFrom",
+		"stepItemsOrder",
+		"stepItemsPriority",
+		"stepItemsSelect"
+	],
+	"name" : "OPModelSimulator",
+	"type" : "normal"
+}

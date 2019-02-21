@@ -1,0 +1,3 @@
+hooks
+prepareOneSimulable
+	simulator fromSelf

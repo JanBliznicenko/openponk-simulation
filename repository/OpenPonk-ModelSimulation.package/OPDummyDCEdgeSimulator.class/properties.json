@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OPDummyDCElementSimulator",
+	"category" : "OpenPonk-ModelSimulation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OPDummyDCEdgeSimulator",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OPEdgeSimulator",
+	"category" : "OpenPonk-ModelSimulation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"steppable"
+	],
+	"name" : "OPDummySubclassOfDCEdgeSimulator",
+	"type" : "normal"
+}

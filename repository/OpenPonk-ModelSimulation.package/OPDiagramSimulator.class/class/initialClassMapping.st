@@ -1,0 +1,3 @@
+initialization
+initialClassMapping
+	^ Dictionary new

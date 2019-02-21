@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "bliznjan 5/5/2015 19:01",
+	"super" : "OPSimulatorEvent",
+	"category" : "OpenPonk-ModelSimulation-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"repeatTimes",
+		"delay"
+	],
+	"name" : "OPSimulatorRunEvent",
+	"type" : "normal"
+}
