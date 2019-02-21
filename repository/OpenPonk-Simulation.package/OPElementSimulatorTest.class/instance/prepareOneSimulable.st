@@ -1,3 +1,0 @@
-hooks
-prepareOneSimulable
-	simulator fromSelf

@@ -1,1 +1,0 @@
-A DCSimulatorEventTest is a test class for testing the behavior of DCSimulatorEvent

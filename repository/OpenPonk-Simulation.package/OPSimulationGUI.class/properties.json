@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "bliznjan 5/5/2015 18:46",
 	"super" : "ComposableModel",
-	"category" : "OpenPonk-SimulationGUI",
+	"category" : "OpenPonk-Simulation",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

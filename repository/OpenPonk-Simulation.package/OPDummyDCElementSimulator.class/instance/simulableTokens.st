@@ -1,3 +1,0 @@
-tokens
-simulableTokens
-	^ self tokens
