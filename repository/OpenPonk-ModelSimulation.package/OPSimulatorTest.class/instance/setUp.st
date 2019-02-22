@@ -1,3 +1,3 @@
 running
 setUp
-	simulator := self classForTesting new
+	simulator := self controllerClass new
