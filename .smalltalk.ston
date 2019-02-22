@@ -4,21 +4,21 @@ SmalltalkCISpec {
 			#platforms : [
 				#pharo
 			],
-			#baseline : 'OpenPonkSimulationGUI',
+			#baseline : 'OpenPonkSimulation',
 			#directory : 'repository'
 		}
 	],
 	#testing : {
 		#coverage : {
 			#packages : [
-				'OpenPonk-SimulationGUI',
-				'OpenPonk-Simulation'
+				'OpenPonk-Simulation',
+				'OpenPonk-ModelSimulation'
 
 			]
 		},
 		#packages : [
-			'OpenPonk-SimulationGUI',
-			'OpenPonk-Simulation'
+			'OpenPonk-Simulation',
+			'OpenPonk-ModelSimulation'
 		]
 	}
 }
