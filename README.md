@@ -1,6 +1,6 @@
 # OpenPonk: Simulation
 
-![Travis build status](https://api.travis-ci.org/JanBliznicenko/openponk-simulation.svg?branch=master)
+[![Build Status](https://travis-ci.org/JanBliznicenko/openponk-simulation.svg?branch=master)](https://travis-ci.org/JanBliznicenko/openponk-simulation)
 
 This repository adds simulations framework to the OpenPonk tool. 
 
@@ -16,7 +16,7 @@ Requires Pharo 6.1.
 In Playground, run following code:
 ```
 Metacello new
-    baseline: 'OpenPonkSimulationGUI';
+    baseline: 'OpenPonkSimulation';
     repository: 'github://JanBliznicenko/openponk-simulation/repository';
     load
 ```
