@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/JanBliznicenko/openponk-simulation.svg?branch=master)](https://travis-ci.org/JanBliznicenko/openponk-simulation)
 
-This repository adds simulations framework to the OpenPonk tool. 
+This is an unofficial extension of [OpenPonk tool](https://openponk.org) that adds base for implementing simulations. 
 
 When behavior is defined for a metamodel, model could be simulated in a random, user-picked or otherwise defined order.
 Example of usage is https://github.com/JanBliznicenko/openponk-petrinets
