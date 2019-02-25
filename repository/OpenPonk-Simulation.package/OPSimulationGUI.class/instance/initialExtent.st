@@ -1,3 +1,3 @@
 api
 initialExtent
-	^ 446 @ 60
+	^ 360 @ 300

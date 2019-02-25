@@ -1,5 +1,5 @@
 initialization
 initialize
+	buttons := OrderedCollection new.
 	super initialize.
-	self openWithSpec.
-	self window whenClosedDo: [ self closed ].
+	self title: 'Simulation'

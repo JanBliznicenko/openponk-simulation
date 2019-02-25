@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "bliznjan 5/5/2015 18:46",
-	"super" : "ComposableModel",
+	"super" : "DynamicComposableModel",
 	"category" : "OpenPonk-Simulation",
 	"classinstvars" : [ ],
 	"pools" : [ ],

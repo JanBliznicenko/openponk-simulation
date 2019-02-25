@@ -6,4 +6,7 @@ initializeWithController
 	self diagram
 		when: OPElementAdded do: [ self reloadController ];
 		when: OPElementRemoved do: [ self reloadController ].
-	self title: 'Simulation of ' , self diagram name
+	self title: 'Simulation of ' , self diagram name.
+	self addButtons.
+	self openWithSpec.
+	self window whenClosedDo: [ self closed ]
