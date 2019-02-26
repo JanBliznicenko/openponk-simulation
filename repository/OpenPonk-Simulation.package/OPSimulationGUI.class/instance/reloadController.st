@@ -4,7 +4,9 @@ reloadController
 
 	| controller |
 	controller := self diagramController.
+	self closed.
+	diagramController := controller.
 	self
-		closed;
-		diagramController: controller;
+		loadSimulation;
+		open;
 		activate
