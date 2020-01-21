@@ -1,1 +1,0 @@
-A DCDiagramSimulatorTest is a test class for testing the behavior of DCDiagramSimulator

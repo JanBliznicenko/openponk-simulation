@@ -1,3 +1,0 @@
-tokens
-steppableTokens
-	^ OrderedCollection new

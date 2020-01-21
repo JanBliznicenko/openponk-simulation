@@ -1,1 +1,0 @@
-I'm abstract event used for simulations

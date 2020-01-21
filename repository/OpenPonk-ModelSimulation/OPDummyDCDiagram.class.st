@@ -1,0 +1,28 @@
+Class {
+	#name : #OPDummyDCDiagram,
+	#superclass : #Object,
+	#instVars : [
+		'elements'
+	],
+	#category : 'OpenPonk-ModelSimulation-Tests'
+}
+
+{ #category : #adding }
+OPDummyDCDiagram >> add: anElement [
+	elements add: anElement
+]
+
+{ #category : #adding }
+OPDummyDCDiagram >> addElements: aNumber [
+	aNumber timesRepeat: [ elements add: OPDummyDCElement new ]
+]
+
+{ #category : #accessing }
+OPDummyDCDiagram >> elements [
+	^ elements
+]
+
+{ #category : #initialization }
+OPDummyDCDiagram >> initialize [
+	elements := OrderedCollection new
+]
