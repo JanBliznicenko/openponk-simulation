@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfOpenPonkSimulation,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfOpenPonkSimulation'
+	#category : #BaselineOfOpenPonkSimulation
 }
 
 { #category : #accessing }
@@ -14,9 +14,12 @@ BaselineOfOpenPonkSimulation >> baseline: spec [
 				with: [ spec repository: 'github://openponk/openponk/repository' ].
 			spec
 				baseline: 'OpenPonkModelSimulation'
-				with: [ spec repository: 'github://JanBliznicenko/openponk-simulation/repository' ].
+				with: [ spec
+						repository: 'github://JanBliznicenko/openponk-simulation/repository' ].
 			spec
 				package: 'OpenPonk-Simulation'
-				with: [ spec requires: #('OpenPonk' 'OpenPonkModelSimulation') ].
-			spec group: 'default' with: #('OpenPonk-Simulation') ]
+				with: [ spec requires: #('OpenPonkModelSimulation') ].
+			spec
+				group: 'plugin' with: #('OpenPonk-Simulation');
+				group: 'default' with: #('OpenPonk' 'plugin') ]
 ]
