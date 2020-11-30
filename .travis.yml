@@ -1,10 +1,15 @@
 language: smalltalk
-sudo: false
-
 os:
-  - linux
-
-smalltalk:
-  - Pharo32-7.0
-  - Pharo64-7.0
-  - Pharo64-8.0
+- linux
+matrix:
+  include:
+    - smalltalk: Pharo64-8.0
+      env: PHARO_VERSION="8.0" PHARO_BITS="64"
+    - smalltalk: Pharo64-9.0
+      env: PHARO_VERSION="9.0" PHARO_BITS="64"
+  allow_failures:
+    - smalltalk: Pharo64-9.0
+      env: PHARO_VERSION="9.0" PHARO_BITS="64"
+cache:
+  directories:
+  - "$SMALLTALK_CI_BUILD_BASE/pharo-local/package-cache"
