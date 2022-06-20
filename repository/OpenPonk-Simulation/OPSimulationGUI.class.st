@@ -19,13 +19,13 @@ Internal Representation and Key Implementation Points.
 "
 Class {
 	#name : #OPSimulationGUI,
-	#superclass : #DynamicComposablePresenter,
+	#superclass : #SpPresenter,
 	#instVars : [
 		'diagramSimulator',
 		'diagramController',
 		'buttons'
 	],
-	#category : 'OpenPonk-Simulation'
+	#category : #'OpenPonk-Simulation'
 }
 
 { #category : #defaults }
@@ -34,11 +34,18 @@ OPSimulationGUI class >> buttonHeight [
 	^ StandardFonts defaultFont height + 20
 ]
 
+{ #category : #'as yet unclassified' }
+OPSimulationGUI class >> defaultLayout [
+	^ SpBoxLayout newLeftToRight
+		add: SpBoxLayout newTopToBottom:  [ :c | c add: SpBoxLayout newLeftToRight:  [ :r |  ] ];
+		yourself
+]
+
 { #category : #specs }
 OPSimulationGUI class >> defaultSpec [
-	^ SpecRowLayout composed
-		newColumn: [ :c | c newRow: [ :r |  ] ];
-		yourself
+
+	self flag: 'Pharo 9- compatibility'.
+	^ self defaultLayout
 ]
 
 { #category : #'instance creation' }
@@ -110,13 +117,13 @@ OPSimulationGUI >> buttonItems [
 
 	^ OrderedCollection
 		with:
-			((self instantiate: ButtonModel)
+			((self newButton)
 				label: 'Save state';
 				iconName: #smallSave;
 				help: 'Save current state into model';
 				action: [ self diagramSimulator saveState ])
 		with:
-			((self instantiate: ButtonModel)
+			((self newButton)
 				label: 'Stop + Load state';
 				iconName: #smallUpdate;
 				help: 'Load state from model from before simulate';
@@ -169,25 +176,25 @@ OPSimulationGUI >> diagramSimulator [
 OPSimulationGUI >> dynamicLayout [
 	| keys |
 	keys := self widgets keys.
-	layout := SpecColumnLayout composed.
-	layout newRow: [ :r | r add: #filler ] height: 2.
+	layout := SpBoxLayout newTopToBottom.
+	layout add: SpBoxLayout newLeftToRight:  [ :r | r add: #filler ] height: 2.
 	keys size odd
 		ifTrue: [ keys := keys copyWith: #filler ].
 	keys
 		pairsDo: [ :odd :even | 
 			layout
-				newRow: [ :r | 
+				add: SpBoxLayout newLeftToRight:  [ :r | 
 					r
 						add: odd;
 						add: even ]
 				height: self class buttonHeight ].
-	layout newRow: [ :r |  ].
+	layout add: SpBoxLayout newLeftToRight:  [ :r |  ].
 	^ layout
 ]
 
 { #category : #'building widgets' }
 OPSimulationGUI >> filler [
-	^ self instantiate: LabelModel
+	^ self newLabel
 ]
 
 { #category : #api }
