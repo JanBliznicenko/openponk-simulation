@@ -197,26 +197,30 @@ OPSimulationGUI >> filler [
 	^ self newLabel
 ]
 
-{ #category : #api }
-OPSimulationGUI >> initialExtent [
-	^ 360 @ 300
+{ #category : #initialization }
+OPSimulationGUI >> initialize [
+
+	buttons := OrderedCollection new.
+	super initialize
 ]
 
 { #category : #initialization }
-OPSimulationGUI >> initialize [
-	buttons := OrderedCollection new.
-	super initialize.
-	self title: 'Simulation'
+OPSimulationGUI >> initializeWindow: aWindow [
+
+	aWindow initialExtent: 360 @ 300.
+	aWindow title: 'Simulation'
 ]
 
 { #category : #initialization }
 OPSimulationGUI >> initializeWithController [
+
 	"creates and prepares simulator for current diagramController"
 
 	self loadSimulation.
 	self diagram when: OPElementAdded do: [ self reloadController ].
 	self diagram when: OPElementRemoved do: [ self reloadController ].
-	self title: 'Simulation of ' , self diagram name.
+	self withWindowDo: [ :window | 
+		window title: 'Simulation of ' , self diagram name ].
 	self addButtons
 ]
 
