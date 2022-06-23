@@ -240,7 +240,7 @@ OPSimulationGUI >> loadSimulation [
 OPSimulationGUI >> open [
 	self isOpen
 		ifTrue: [ ^ self takeKeyboardFocus ].
-	self openWithSpec.
+	super open.
 	self window whenClosedDo: [ self closed ]
 ]
 
