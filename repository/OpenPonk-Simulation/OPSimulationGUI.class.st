@@ -28,24 +28,10 @@ Class {
 	#category : #'OpenPonk-Simulation'
 }
 
-{ #category : #defaults }
-OPSimulationGUI class >> buttonHeight [
-
-	^ StandardFonts defaultFont height + 20
-]
-
 { #category : #'as yet unclassified' }
 OPSimulationGUI class >> defaultLayout [
+
 	^ SpBoxLayout newLeftToRight
-		add: SpBoxLayout newTopToBottom:  [ :c | c add: SpBoxLayout newLeftToRight:  [ :r |  ] ];
-		yourself
-]
-
-{ #category : #specs }
-OPSimulationGUI class >> defaultSpec [
-
-	self flag: 'Pharo 9- compatibility'.
-	^ self defaultLayout
 ]
 
 { #category : #'instance creation' }
@@ -98,8 +84,10 @@ OPSimulationGUI >> activate [
 
 { #category : #adding }
 OPSimulationGUI >> addButtons [
+
 	buttons := self buttonItems.
-	self rebuildWidget
+	self initializeLayout.
+	self withWindowDo: [ :window | self initializeWindow: window ]
 ]
 
 { #category : #'building widgets' }
@@ -172,31 +160,6 @@ OPSimulationGUI >> diagramSimulator [
 	^ diagramSimulator
 ]
 
-{ #category : #'building widgets' }
-OPSimulationGUI >> dynamicLayout [
-	| keys |
-	keys := self widgets keys.
-	layout := SpBoxLayout newTopToBottom.
-	layout add: SpBoxLayout newLeftToRight:  [ :r | r add: #filler ] height: 2.
-	keys size odd
-		ifTrue: [ keys := keys copyWith: #filler ].
-	keys
-		pairsDo: [ :odd :even | 
-			layout
-				add: SpBoxLayout newLeftToRight:  [ :r | 
-					r
-						add: odd;
-						add: even ]
-				height: self class buttonHeight ].
-	layout add: SpBoxLayout newLeftToRight:  [ :r |  ].
-	^ layout
-]
-
-{ #category : #'building widgets' }
-OPSimulationGUI >> filler [
-	^ self newLabel
-]
-
 { #category : #initialization }
 OPSimulationGUI >> initialize [
 
@@ -204,11 +167,36 @@ OPSimulationGUI >> initialize [
 	super initialize
 ]
 
+{ #category : #'building widgets' }
+OPSimulationGUI >> initializeLayout [
+
+	| items gridLayout counter |
+	gridLayout := SpGridLayout new.
+	items := buttons.
+	buttons size odd ifTrue: [ 
+		items := items copyWith: SpNullPresenter new ].
+	counter := 0.
+	items pairsDo: [ :odd :even | 
+		counter := counter + 1.
+		gridLayout add: odd at: 1 @ counter.
+
+		gridLayout add: even at: 2 @ counter ].
+	self layout: gridLayout
+]
+
+{ #category : #initialization }
+OPSimulationGUI >> initializePresenters [
+
+	super initializePresenters.
+	self initializeLayout
+]
+
 { #category : #initialization }
 OPSimulationGUI >> initializeWindow: aWindow [
 
-	aWindow initialExtent: 360 @ 300.
-	aWindow title: 'Simulation'
+	diagramController ifNil: [ ^ self ].
+	aWindow initialExtent: 360 @ (buttons size * self class buttonHeight).
+	aWindow title: 'Simulation of ' , self diagram name
 ]
 
 { #category : #initialization }
@@ -219,8 +207,6 @@ OPSimulationGUI >> initializeWithController [
 	self loadSimulation.
 	self diagram when: OPElementAdded do: [ self reloadController ].
 	self diagram when: OPElementRemoved do: [ self reloadController ].
-	self withWindowDo: [ :window | 
-		window title: 'Simulation of ' , self diagram name ].
 	self addButtons
 ]
 
@@ -246,12 +232,11 @@ OPSimulationGUI >> open [
 
 { #category : #'building widgets' }
 OPSimulationGUI >> rebuildWidget [
-	self widgets removeAll.
-	self createWidgets.
-	self needFullRebuild: false.
-	self buildWithSpecLayout: self dynamicLayout.
-	self alignButtons.
-	self extent: 360 @ (26 + (buttons size * self class buttonHeight / 2))
+
+	self initializeLayout.
+	self withWindowDo: [ :window | 
+		window initialExtent:
+			360 @ (26 + (buttons size * self class buttonHeight / 2)) ]
 ]
 
 { #category : #updating }
