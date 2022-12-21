@@ -11,7 +11,7 @@ BaselineOfOpenPonkSimulation >> baseline: spec [
 	spec for: #common do: [ 
 		spec
 			baseline: 'OpenPonk'
-			with: [ spec repository: 'github://openponk/openponk' ].
+			with: [ spec repository: 'github://openponk/openponk:dev/Roassal3' ].
 		spec baseline: 'OpenPonkModelSimulation' with: [ 
 			spec repository:
 				'github://JanBliznicenko/openponk-simulation' ].
