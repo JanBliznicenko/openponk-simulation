@@ -21,7 +21,7 @@ Class {
 		'stepItemsPriority',
 		'stepItemsSelect'
 	],
-	#category : 'OpenPonk-ModelSimulation-Simulators'
+	#category : #'OpenPonk-ModelSimulation-Simulators'
 }
 
 { #category : #'instance creation' }
@@ -50,7 +50,7 @@ OPModelSimulator >> fromSelf [
 	
 	steps self"
 
-	stepItemsFrom := self asOrderedCollection
+	stepItemsFrom := OrderedCollection with: self
 ]
 
 { #category : #stepping }

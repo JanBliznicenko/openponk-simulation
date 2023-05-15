@@ -18,7 +18,7 @@ Class {
 		'priority',
 		'diagramSimulator'
 	],
-	#category : 'OpenPonk-ModelSimulation-Simulators'
+	#category : #'OpenPonk-ModelSimulation-Simulators'
 }
 
 { #category : #'instance creation' }
@@ -75,7 +75,8 @@ OPToken >> initialize [
 
 { #category : #'private - accessing' }
 OPToken >> itemsForAction [
-	^ self asOrderedCollection
+
+	^ OrderedCollection with: self
 ]
 
 { #category : #accessing }
