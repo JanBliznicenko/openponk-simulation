@@ -71,8 +71,12 @@ OPSimulationGUI class >> toolbarMenu: aBuilder [
 
 { #category : #toolbar }
 OPSimulationGUI class >> toolbarMenuItemFor: aBuilder [
+
 	^ (aBuilder item: 'Simulation')
-		action: [ "aBuilder model is editor" self diagramController: aBuilder model diagramController ]
+		  iconName: #glamorousSpawn;
+		  action: [ "aBuilder model is editor"
+			  self diagramController: aBuilder model diagramController ];
+		  yourself
 ]
 
 { #category : #windows }
@@ -257,7 +261,7 @@ OPSimulationGUI >> reloadController [
 OPSimulationGUI >> simulatorClass [
 	"diagram simulator class"
 
-	^ SubclassResponsibility
+	^ self subclassResponsibility
 ]
 
 { #category : #actions }
