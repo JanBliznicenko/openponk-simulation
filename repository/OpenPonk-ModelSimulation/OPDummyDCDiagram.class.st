@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'elements'
 	],
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#category : #'OpenPonk-ModelSimulation-Tests'
 }
 
 { #category : #adding }
@@ -15,6 +15,12 @@ OPDummyDCDiagram >> add: anElement [
 { #category : #adding }
 OPDummyDCDiagram >> addElements: aNumber [
 	aNumber timesRepeat: [ elements add: OPDummyDCElement new ]
+]
+
+{ #category : #accessing }
+OPDummyDCDiagram >> allElements [
+
+	^ self elements
 ]
 
 { #category : #accessing }

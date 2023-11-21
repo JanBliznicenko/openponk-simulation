@@ -44,6 +44,13 @@ OPDiagramSimulator class >> resetClassMapping [
 ]
 
 { #category : #'private - creation' }
+OPDiagramSimulator >> allModelElements [
+	"should return all model elements"
+
+	^ model allElements
+]
+
+{ #category : #'private - creation' }
 OPDiagramSimulator >> createElementFrom: aModel [
 	"creates simulator element for model element"
 
@@ -125,7 +132,8 @@ OPDiagramSimulator >> isSteppable [
 OPDiagramSimulator >> loadItems [
 	"creates simulators for model elements"
 
-	model elements do: [ :modelElement | self createElementFrom: modelElement ].
+	self allModelElements do: [ :modelElement |
+		self createElementFrom: modelElement ].
 	self
 		elementsDo: [ :element | element loadConnectedItems ];
 		loadSimulableElements
