@@ -19,7 +19,7 @@ Class {
 	#classInstVars : [
 		'ClassMapping'
 	],
-	#category : 'OpenPonk-ModelSimulation-Simulators'
+	#category : #'OpenPonk-ModelSimulation-Simulators'
 }
 
 { #category : #accessing }
@@ -34,6 +34,13 @@ OPDiagramSimulator class >> classFor: aModel [
 { #category : #initialization }
 OPDiagramSimulator class >> initialClassMapping [
 	^ Dictionary new
+]
+
+{ #category : #initialization }
+OPDiagramSimulator class >> resetClassMapping [
+
+	<script>
+	ClassMapping := nil
 ]
 
 { #category : #'private - creation' }
