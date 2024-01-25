@@ -22,7 +22,7 @@ Class {
 		'priority',
 		'diagramSimulator'
 	],
-	#category : 'OpenPonk-ModelSimulation-Simulators'
+	#category : #'OpenPonk-ModelSimulation-Simulators'
 }
 
 { #category : #'instance creation' }
@@ -123,11 +123,6 @@ OPElementSimulator >> loadState [
 	"loads state of model into simulator"
 
 	self stop
-]
-
-{ #category : #'private - accessing' }
-OPElementSimulator >> model: aModel [
-	super model: aModel
 ]
 
 { #category : #accessing }
