@@ -2,26 +2,28 @@
 A DCDiagramSimulatorTest is a test class for testing the behavior of DCDiagramSimulator
 "
 Class {
-	#name : #OPDiagramSimulatorTest,
-	#superclass : #OPModelSimulatorTest,
+	#name : 'OPDiagramSimulatorTest',
+	#superclass : 'OPModelSimulatorTest',
 	#instVars : [
 		'diagram'
 	],
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPDiagramSimulatorTest >> controllerClass [
 	^ OPDummySubclassOfDCDiagramSimulator
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPDiagramSimulatorTest >> prepareOneSimulable [
 	diagram := OPDummyDCDiagram new addElements: 1.
 	simulator := self controllerClass model: diagram
 ]
 
-{ #category : #running }
+{ #category : 'running' }
 OPDiagramSimulatorTest >> setUp [
 	| edge |
 	super setUp.
@@ -35,7 +37,7 @@ OPDiagramSimulatorTest >> setUp [
 	simulator model: diagram
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPDiagramSimulatorTest >> testAccessing [
 	self assert: simulator simulableElements size = 3.
 	self assert: simulator steppableElements size = 0.
@@ -50,7 +52,7 @@ OPDiagramSimulatorTest >> testAccessing [
 	self assert: simulator model class = OPDummyDCDiagram
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPDiagramSimulatorTest >> testEnumeration [
 	self assert: (simulator elements allSatisfy: [ :each | each state = 1 ]).
 	simulator elementsDo: [ :each | each saveState ].
@@ -59,7 +61,7 @@ OPDiagramSimulatorTest >> testEnumeration [
 	self assert: (simulator elements allSatisfy: [ :each | each isSimulable not or: [ each state = 3 ] ])
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPDiagramSimulatorTest >> testLoadingOfModel [
 	self assert: (simulator elements allSatisfy: [ :each | each loaded ]).
 	self assert: simulator elements size = 4.
@@ -70,7 +72,7 @@ OPDiagramSimulatorTest >> testLoadingOfModel [
 	self assert: (simulator elements allSatisfy: [ :each | each diagramSimulator = simulator ])
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPDiagramSimulatorTest >> testStates [
 	self assert: (simulator elements sum: [ :each | each state ]) = 4.
 	simulator saveState.
@@ -79,7 +81,7 @@ OPDiagramSimulatorTest >> testStates [
 	self assert: (simulator elements sum: [ :each | each state ]) = 4
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPDiagramSimulatorTest >> testStep [
 	simulator
 		fromSteppableElements;

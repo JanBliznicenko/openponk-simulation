@@ -1,30 +1,32 @@
 Class {
-	#name : #OPDummyDCEdgeSimulator,
-	#superclass : #OPDummyDCElementSimulator,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPDummyDCEdgeSimulator',
+	#superclass : 'OPDummyDCElementSimulator',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDummyDCEdgeSimulator >> isSimulable [
 	^ false
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCEdgeSimulator >> source [
 	^ incoming first
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCEdgeSimulator >> target [
 	^ outgoing first
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPDummyDCEdgeSimulator >> tokenCount [
 	^ 0
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCEdgeSimulator >> tokens [
 	^ OrderedCollection new
 ]

@@ -1,10 +1,12 @@
 Class {
-	#name : #OPDummySubclassOfDCDiagramSimulator,
-	#superclass : #OPDiagramSimulator,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPDummySubclassOfDCDiagramSimulator',
+	#superclass : 'OPDiagramSimulator',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPDummySubclassOfDCDiagramSimulator class >> initialClassMapping [
 	^ super initialClassMapping
 		at: OPDummyDCElement put: OPDummyDCElementSimulator;
@@ -12,7 +14,7 @@ OPDummySubclassOfDCDiagramSimulator class >> initialClassMapping [
 		yourself
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 OPDummySubclassOfDCDiagramSimulator >> steppable: aBoolean [
 	self elementsDo: [ :each | each steppable: aBoolean ]
 ]

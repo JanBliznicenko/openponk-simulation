@@ -2,12 +2,14 @@
 I am a special case of element simulator, with one source and one target which I connect.
 "
 Class {
-	#name : #OPEdgeSimulator,
-	#superclass : #OPElementSimulator,
-	#category : 'OpenPonk-ModelSimulation-Simulators'
+	#name : 'OPEdgeSimulator',
+	#superclass : 'OPElementSimulator',
+	#category : 'OpenPonk-ModelSimulation-Simulators',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Simulators'
 }
 
-{ #category : #creation }
+{ #category : 'creation' }
 OPEdgeSimulator >> loadConnectedItems [
 	"loads and/or connects appropriate tokens and elements"
 
@@ -17,25 +19,25 @@ OPEdgeSimulator >> loadConnectedItems [
 		target: (diagramSimulator simulatorOf: model target)
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPEdgeSimulator >> source [
 	incoming ifEmpty: [ ^ nil ].
 	^ incoming first
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPEdgeSimulator >> source: anElement [
 	self incoming ifNotEmpty: [ self error: [ 'edge can have only one source' ] ].
 	self addIncoming: anElement
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPEdgeSimulator >> target [
 	outgoing ifEmpty: [ ^ nil ].
 	^ outgoing first
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPEdgeSimulator >> target: anElement [
 	self outgoing ifNotEmpty: [ self error: [ 'edge can have only one target' ] ].
 	self addOutgoing: anElement

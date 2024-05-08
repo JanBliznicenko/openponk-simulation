@@ -7,23 +7,25 @@ I'm abstract running-related event of simulators
 	repeatTimes:		amount of steps meant to be taken if limited, nil if not limited
 "
 Class {
-	#name : #OPSimulatorRunEvent,
-	#superclass : #OPSimulatorEvent,
+	#name : 'OPSimulatorRunEvent',
+	#superclass : 'OPSimulatorEvent',
 	#instVars : [
 		'repeatTimes',
 		'delay'
 	],
-	#category : 'OpenPonk-ModelSimulation-Events'
+	#category : 'OpenPonk-ModelSimulation-Events',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Events'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulatorRunEvent class >> simulator: aSimulator delay: milliseconds [
 	^ (super simulator: aSimulator)
 		delay: milliseconds;
 		yourself
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulatorRunEvent class >> simulator: aSimulator delay: milliseconds repeatTimes: anInteger [
 	^ (super simulator: aSimulator)
 		repeatTimes: anInteger;
@@ -31,27 +33,27 @@ OPSimulatorRunEvent class >> simulator: aSimulator delay: milliseconds repeatTim
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulatorRunEvent >> delay [
 	^ delay
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPSimulatorRunEvent >> delay: anObject [
 	delay := anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulatorRunEvent >> isLimited [
 	^ repeatTimes notNil
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulatorRunEvent >> repeatTimes [
 	^ repeatTimes
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPSimulatorRunEvent >> repeatTimes: anInteger [
 	repeatTimes := anInteger
 ]

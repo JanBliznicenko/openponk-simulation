@@ -12,8 +12,8 @@ Create my instance by providing diagram simulator and element model to simulate 
 	tokens:		collection of tokens I contain
 "
 Class {
-	#name : #OPElementSimulator,
-	#superclass : #OPModelSimulator,
+	#name : 'OPElementSimulator',
+	#superclass : 'OPModelSimulator',
 	#instVars : [
 		'incoming',
 		'outgoing',
@@ -22,10 +22,12 @@ Class {
 		'priority',
 		'diagramSimulator'
 	],
-	#category : #'OpenPonk-ModelSimulation-Simulators'
+	#category : 'OpenPonk-ModelSimulation-Simulators',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Simulators'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPElementSimulator class >> model: anElement diagramSimulator: aDiagramSimulator [
 	^ self new
 		model: anElement;
@@ -33,7 +35,7 @@ OPElementSimulator class >> model: anElement diagramSimulator: aDiagramSimulator
 		yourself
 ]
 
-{ #category : #adding }
+{ #category : 'adding' }
 OPElementSimulator >> addIncoming: anElement [
 	"adds element as incoming"
 
@@ -43,7 +45,7 @@ OPElementSimulator >> addIncoming: anElement [
 	self addedIncoming: anElement
 ]
 
-{ #category : #adding }
+{ #category : 'adding' }
 OPElementSimulator >> addOutgoing: anElement [
 	"adds element as outgoing"
 
@@ -53,56 +55,56 @@ OPElementSimulator >> addOutgoing: anElement [
 	self addedOutgoing: anElement
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> addToken: aToken [
 	tokens add: aToken.
 	aToken element: self
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> addTokens: aCollectionOfTokens [
 	tokens addAll: aCollectionOfTokens.
 	aCollectionOfTokens do: [ :each | each element: self ]
 ]
 
-{ #category : #'private - adding' }
+{ #category : 'private - adding' }
 OPElementSimulator >> addedIncoming: anElement [
 	incoming add: anElement
 ]
 
-{ #category : #'private - adding' }
+{ #category : 'private - adding' }
 OPElementSimulator >> addedOutgoing: anElement [
 	outgoing add: anElement
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPElementSimulator >> connectedDo: aBlock [
 	self
 		incomingDo: aBlock;
 		outgoingDo: aBlock
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPElementSimulator >> diagramSimulator [
 	^ diagramSimulator
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPElementSimulator >> diagramSimulator: aDiagramSimulator [
 	diagramSimulator := aDiagramSimulator
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPElementSimulator >> incoming [
 	^ incoming
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPElementSimulator >> incomingDo: aBlock [
 	incoming do: aBlock
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPElementSimulator >> initialize [
 	super initialize.
 	priority := 0.
@@ -111,53 +113,53 @@ OPElementSimulator >> initialize [
 	tokens := OrderedCollection new
 ]
 
-{ #category : #creation }
+{ #category : 'creation' }
 OPElementSimulator >> loadConnectedItems [
 	"loads and/or connects appropriate tokens and elements"
 
 	"do nothing by default"
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPElementSimulator >> loadState [
 	"loads state of model into simulator"
 
 	self stop
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPElementSimulator >> outgoing [
 	^ outgoing
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPElementSimulator >> outgoingDo: aBlock [
 	outgoing do: aBlock
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPElementSimulator >> priority [
 	^ priority
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPElementSimulator >> priority: anInteger [
 	priority := anInteger
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> removeAllTokens [
 	^ self removeTokens: self tokenCount
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> removeToken: aToken [
 	tokens remove: aToken.
 	aToken element: nil.
 	^ aToken
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> removeTokens: anInteger [
 	| removedTokens |
 	removedTokens := OrderedCollection new.
@@ -165,14 +167,14 @@ OPElementSimulator >> removeTokens: anInteger [
 	^ removedTokens
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPElementSimulator >> saveState [
 	"saves state after simulation into model"
 
 	startingModel := model copy
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPElementSimulator >> setDefaultStepping [
 	"sets default stepping settings"
 
@@ -180,27 +182,27 @@ OPElementSimulator >> setDefaultStepping [
 	self fromSelf
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> simulableTokens [
 	^ tokens select: [ :token | token isSimulable ]
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> steppableTokens [
 	^ tokens select: [ :token | token isSteppable ]
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> tokenCount [
 	^ tokens size
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPElementSimulator >> tokens [
 	^ tokens
 ]
 
-{ #category : #'private - action' }
+{ #category : 'private - action' }
 OPElementSimulator >> tokensDo: aBlock [
 	tokens do: aBlock
 ]

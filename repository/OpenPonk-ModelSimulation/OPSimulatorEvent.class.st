@@ -5,27 +5,29 @@ I'm abstract event of simulators
 	simulator:		simulator which did that
 "
 Class {
-	#name : #OPSimulatorEvent,
-	#superclass : #OPSimulationEvent,
+	#name : 'OPSimulatorEvent',
+	#superclass : 'OPSimulationEvent',
 	#instVars : [
 		'simulator'
 	],
-	#category : 'OpenPonk-ModelSimulation-Events'
+	#category : 'OpenPonk-ModelSimulation-Events',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Events'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulatorEvent class >> simulator: aSimulator [
 	^ self new
 		simulator: aSimulator;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulatorEvent >> simulator [
 	^ simulator
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPSimulatorEvent >> simulator: aSimulator [
 	simulator := aSimulator
 ]

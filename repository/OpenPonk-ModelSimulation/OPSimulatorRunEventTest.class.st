@@ -2,12 +2,14 @@
 A DCSimulatorRunEventTest is a test class for testing the behavior of DCSimulatorRunEvent
 "
 Class {
-	#name : #OPSimulatorRunEventTest,
-	#superclass : #OPSimulatorEventTest,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPSimulatorRunEventTest',
+	#superclass : 'OPSimulatorEventTest',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPSimulatorRunEventTest >> testInstanceCreation [
 	| event |
 	event := OPSimulatorRunEvent simulator: simulator delay: 2 repeatTimes: 4.

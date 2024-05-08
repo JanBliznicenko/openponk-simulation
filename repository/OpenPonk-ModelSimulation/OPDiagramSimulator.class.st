@@ -10,8 +10,8 @@ First all element simulators are created for all elements, then they get interco
 	simulableElements:		collection of simulable element simulators
 "
 Class {
-	#name : #OPDiagramSimulator,
-	#superclass : #OPModelSimulator,
+	#name : 'OPDiagramSimulator',
+	#superclass : 'OPModelSimulator',
 	#instVars : [
 		'elements',
 		'simulableElements'
@@ -19,10 +19,12 @@ Class {
 	#classInstVars : [
 		'ClassMapping'
 	],
-	#category : #'OpenPonk-ModelSimulation-Simulators'
+	#category : 'OpenPonk-ModelSimulation-Simulators',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Simulators'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDiagramSimulator class >> classFor: aModel [
 	ClassMapping ifNil: [ ClassMapping := self initialClassMapping ].
 	^ ClassMapping
@@ -31,26 +33,26 @@ OPDiagramSimulator class >> classFor: aModel [
 			[ self error: aModel class name , ' is not part of model of ' , self name , '.' ]
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPDiagramSimulator class >> initialClassMapping [
 	^ Dictionary new
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPDiagramSimulator class >> resetClassMapping [
 
 	<script>
 	ClassMapping := nil
 ]
 
-{ #category : #'private - creation' }
+{ #category : 'private - creation' }
 OPDiagramSimulator >> allModelElements [
 	"should return all model elements"
 
 	^ model allElements
 ]
 
-{ #category : #'private - creation' }
+{ #category : 'private - creation' }
 OPDiagramSimulator >> createElementFrom: aModel [
 	"creates simulator element for model element"
 
@@ -59,22 +61,22 @@ OPDiagramSimulator >> createElementFrom: aModel [
 	elements add: (simulatorClass model: aModel diagramSimulator: self)
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> diagramSimulator [
 	^ self
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> elements [
 	^ elements
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> elementsDo: aBlock [
 	self elements do: aBlock
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPDiagramSimulator >> fromAllElements [
 	"stepping settings
 	before: none
@@ -85,7 +87,7 @@ OPDiagramSimulator >> fromAllElements [
 	stepItemsFrom := [ self elements ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPDiagramSimulator >> fromSimulableElements [
 	"stepping settings
 	before: none
@@ -96,7 +98,7 @@ OPDiagramSimulator >> fromSimulableElements [
 	stepItemsFrom := [ self simulableElements ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPDiagramSimulator >> fromSteppableElements [
 	"stepping settings
 	before: none
@@ -107,28 +109,28 @@ OPDiagramSimulator >> fromSteppableElements [
 	stepItemsFrom := [ self steppableElements ]
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPDiagramSimulator >> initialize [
 	super initialize.
 	elements := OrderedCollection new.
 	simulableElements := OrderedCollection new
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDiagramSimulator >> isSimulable [
 	"could there be any possibility to step?"
 
 	^ simulableElements isNotEmpty
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDiagramSimulator >> isSteppable [
 	"can I step right now?"
 
 	^ simulableElements anySatisfy: [ :any | any isSteppable ]
 ]
 
-{ #category : #'private - creation' }
+{ #category : 'private - creation' }
 OPDiagramSimulator >> loadItems [
 	"creates simulators for model elements"
 
@@ -139,14 +141,14 @@ OPDiagramSimulator >> loadItems [
 		loadSimulableElements
 ]
 
-{ #category : #'private - creation' }
+{ #category : 'private - creation' }
 OPDiagramSimulator >> loadSimulableElements [
 	"selects elements which are simulable"
 
 	simulableElements := elements select: [ :element | element isSimulable ]
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPDiagramSimulator >> loadState [
 	"loads state of model into simulator"
 
@@ -154,7 +156,7 @@ OPDiagramSimulator >> loadState [
 	self elementsDo: [ :element | element loadState ]
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPDiagramSimulator >> model: aDiagram [
 	"sets and loads model"
 
@@ -164,14 +166,14 @@ OPDiagramSimulator >> model: aDiagram [
 		saveState
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPDiagramSimulator >> saveState [
 	"saves state after simulation into model"
 
 	self elementsDo: [ :element | element saveState ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPDiagramSimulator >> setDefaultStepping [
 	"sets default stepping settings"
 
@@ -179,26 +181,26 @@ OPDiagramSimulator >> setDefaultStepping [
 	self fromSimulableElements
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> simulableElements [
 	"elements with possibility to step"
 
 	^ simulableElements
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> simulableElementsDo: aBlock [
 	self simulableElements do: aBlock
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> simulableTokens [
 	"tokens with possibility to step"
 
 	^ elements flatCollect: [ :el | el simulableTokens ]
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> simulatorOf: aModel [
 	"answers element simulator of model element"
 
@@ -210,28 +212,28 @@ OPDiagramSimulator >> simulatorOf: aModel [
 				ifFalse: [ self error: aModel asString , ' not found' ] ]
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> steppableElements [
 	"elements which can step right now"
 
 	^ simulableElements select: [ :el | el isSteppable ]
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> steppableTokens [
 	"tokens which can step right now"
 
 	^ elements flatCollect: [ :el | el steppableTokens ]
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> tokenCount [
 	"amount of tokens"
 
 	^ elements inject: 0 into: [ :sum :el | el tokenCount + sum ]
 ]
 
-{ #category : #accesing }
+{ #category : 'accesing' }
 OPDiagramSimulator >> tokens [
 	"answers collection of tokens"
 

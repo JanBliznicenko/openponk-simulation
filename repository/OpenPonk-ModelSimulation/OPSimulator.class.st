@@ -11,18 +11,20 @@ Protocol stepping contains settings for steps, actions contain executing steps.
 	shouldRun:		boolean telling whether running should continue
 "
 Class {
-	#name : #OPSimulator,
-	#superclass : #Object,
+	#name : 'OPSimulator',
+	#superclass : 'Object',
 	#instVars : [
 		'shouldRun',
 		'announcer',
 		'actions',
 		'delayInMilliseconds'
 	],
-	#category : #'OpenPonk-ModelSimulation-Simulators'
+	#category : 'OpenPonk-ModelSimulation-Simulators',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Simulators'
 }
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPSimulator >> addAction: block [
 	"stepping settings
 	source based on valueForAction method
@@ -32,7 +34,7 @@ OPSimulator >> addAction: block [
 	actions addLast: block
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPSimulator >> addFirstAction: block [
 	"stepping settings
 	source based on valueForAction method
@@ -42,36 +44,36 @@ OPSimulator >> addFirstAction: block [
 	actions addFirst: block
 ]
 
-{ #category : #announcing }
+{ #category : 'announcing' }
 OPSimulator >> announce: anAnnouncement [
 	announcer announce: anAnnouncement
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulator >> delay [
 	"pause between steps while repeating"
 
 	^ delayInMilliseconds
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulator >> delay: milliSeconds [
 	"pause between steps while repeating"
 
 	delayInMilliseconds := milliSeconds
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulator >> diagram [
 	^ self diagramSimulator model
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulator >> diagramSimulator [
 	^ self subclassResponsibility
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> doAction: anIndex [
 	"makes selected action"
 
@@ -83,7 +85,7 @@ OPSimulator >> doAction: anIndex [
 	self announce: (OPSimulatorDidAction simulator: self action: action index: anIndex)
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPSimulator >> fromSelf [
 	"stepping settings
 	before: none
@@ -94,7 +96,7 @@ OPSimulator >> fromSelf [
 	self subclassResponsibility
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPSimulator >> initialize [
 	super initialize.
 	shouldRun := false.
@@ -105,33 +107,33 @@ OPSimulator >> initialize [
 	announcer := Announcer new
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPSimulator >> isFinished [
 	"is there not any way to step anymore?"
 
 	^ self isSteppable not
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPSimulator >> isSimulable [
 	"could there be any possibility to step? - rigid: should return always true or always false"
 
 	^ self subclassResponsibility
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPSimulator >> isSteppable [
 	"can I step right now?"
 
 	^ self subclassResponsibility
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPSimulator >> itemsForAction [
 	^ self subclassResponsibility
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> repeat [
 	"repeats step until finished or stopped, waits for delay between every step"
 
@@ -151,14 +153,14 @@ OPSimulator >> repeat [
 	self announce: (OPSimulatorStoppedRun simulator: self delay: delay) ] fork
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> repeatOnce [
 	"steps once"
 
 	self step
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> repeatTimes: anInteger [
 	"repeats step anInteger times
 	 stops also when finished or stopped
@@ -182,7 +184,7 @@ OPSimulator >> repeatTimes: anInteger [
 	self announce: (OPSimulatorStoppedRun simulator: self delay: delay repeatTimes: anInteger) ] fork
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> repeatWithDelay: delay [
 	"repeats step until finished or stopped, waits for given time between every step"
 
@@ -194,19 +196,19 @@ OPSimulator >> repeatWithDelay: delay [
 		delay: originalDelay
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPSimulator >> resetActions [
 	actions := OrderedCollection new
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPSimulator >> setDefaultStepping [
 	"sets default stepping settings"
 
 	self fromSelf
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> step [
 	"makes all actions"
 
@@ -226,19 +228,32 @@ OPSimulator >> step [
 	self announce: (OPSimulatorStepped simulator: self)
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulator >> stop [
 	"terminates running when current step is finished"
 
 	shouldRun := false
 ]
 
-{ #category : #'private - actions' }
+{ #category : 'private - actions' }
 OPSimulator >> waitFor: milliSeconds [
 	(Delay forMilliseconds: milliSeconds) wait
 ]
 
-{ #category : #announcing }
+{ #category : 'announcing' }
 OPSimulator >> when: anEvent do: aBlock [
-	announcer when: anEvent do: aBlock
+
+	self deprecated: 'Use when:do:for: (usually for: self) or when:send:to:'
+]
+
+{ #category : 'announcing' }
+OPSimulator >> when: anEvent do: aBlock for: aReceiver [
+
+	announcer when: anEvent do: aBlock for: aReceiver
+]
+
+{ #category : 'announcing' }
+OPSimulator >> when: anAnnouncementClass send: aSelector to: anObject [
+
+	announcer when: anAnnouncementClass send: aSelector to: anObject
 ]

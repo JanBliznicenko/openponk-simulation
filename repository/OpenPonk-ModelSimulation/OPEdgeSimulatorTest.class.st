@@ -2,23 +2,25 @@
 A DCEdgeSimulatorTest is a test class for testing the behavior of DCEdgeSimulator
 "
 Class {
-	#name : #OPEdgeSimulatorTest,
-	#superclass : #OPElementSimulatorTest,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPEdgeSimulatorTest',
+	#superclass : 'OPElementSimulatorTest',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPEdgeSimulatorTest >> controllerClass [
 	^ OPDummySubclassOfDCEdgeSimulator
 ]
 
-{ #category : #running }
+{ #category : 'running' }
 OPEdgeSimulatorTest >> setUp [
 	super setUp.
 	simulator model: OPDummyDCEdge new
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPEdgeSimulatorTest >> testConnectedAliases [
 	self assert: simulator source = nil.
 	self assert: simulator target = nil.

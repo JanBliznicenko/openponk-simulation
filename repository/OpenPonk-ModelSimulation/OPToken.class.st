@@ -11,52 +11,54 @@ If this element does not know its diagramSimulator yet, provide also that.
 	priority:		priority for step ordering or filtering
 "
 Class {
-	#name : #OPToken,
-	#superclass : #OPSimulator,
+	#name : 'OPToken',
+	#superclass : 'OPSimulator',
 	#instVars : [
 		'element',
 		'priority',
 		'diagramSimulator'
 	],
-	#category : #'OpenPonk-ModelSimulation-Simulators'
+	#category : 'OpenPonk-ModelSimulation-Simulators',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Simulators'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPToken class >> diagramSimulator: aDiagramSimulator [
 	^ self new
 		diagramSimulator: aDiagramSimulator;
 		yourself
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPToken class >> element: anElement [
 	^ self new
 		element: anElement;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPToken >> diagramSimulator [
 	^ diagramSimulator
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPToken >> diagramSimulator: aDiagramSimulator [
 	diagramSimulator := aDiagramSimulator
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPToken >> element [
 	^ element
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPToken >> element: anElement [
 	element := anElement.
 	self diagramSimulator: (element ifNotNil: [ element diagramSimulator ] ifNil: [ nil ])
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 OPToken >> fromSelf [
 	"stepping settings
 	before: none
@@ -67,24 +69,24 @@ OPToken >> fromSelf [
 	"do nothing"
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPToken >> initialize [
 	super initialize.
 	priority := 0
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPToken >> itemsForAction [
 
 	^ OrderedCollection with: self
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPToken >> priority [
 	^ priority
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPToken >> priority: anInteger [
 	priority := anInteger
 ]

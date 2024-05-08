@@ -6,16 +6,18 @@ I'm abstract action-related event of simulators
 	index:		index of action in collection of actions
 "
 Class {
-	#name : #OPSimulatorActionEvent,
-	#superclass : #OPSimulatorEvent,
+	#name : 'OPSimulatorActionEvent',
+	#superclass : 'OPSimulatorEvent',
 	#instVars : [
 		'action',
 		'index'
 	],
-	#category : 'OpenPonk-ModelSimulation-Events'
+	#category : 'OpenPonk-ModelSimulation-Events',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Events'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulatorActionEvent class >> simulator: aSimulator action: anAction index: anIndex [
 	^ (super simulator: aSimulator)
 		action: anAction;
@@ -23,22 +25,22 @@ OPSimulatorActionEvent class >> simulator: aSimulator action: anAction index: an
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulatorActionEvent >> action [
 	^ action
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPSimulatorActionEvent >> action: anObject [
 	action := anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulatorActionEvent >> index [
 	^ index
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPSimulatorActionEvent >> index: anObject [
 	index := anObject
 ]
