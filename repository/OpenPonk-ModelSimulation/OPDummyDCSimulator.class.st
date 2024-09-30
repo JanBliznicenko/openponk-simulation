@@ -1,24 +1,26 @@
 Class {
-	#name : #OPDummyDCSimulator,
-	#superclass : #Object,
+	#name : 'OPDummyDCSimulator',
+	#superclass : 'Object',
 	#instVars : [
 		'priority'
 	],
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPDummyDCSimulator >> initialize [
 	super initialize.
 	priority := 0
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCSimulator >> priority [
 	^ priority
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCSimulator >> priority: aPriority [
 	priority := aPriority
 ]

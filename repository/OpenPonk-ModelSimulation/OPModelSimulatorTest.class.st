@@ -2,42 +2,44 @@
 A DCModelSimulatorTest is a test class for testing the behavior of DCModelSimulator
 "
 Class {
-	#name : #OPModelSimulatorTest,
-	#superclass : #OPSimulatorTest,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPModelSimulatorTest',
+	#superclass : 'OPSimulatorTest',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPModelSimulatorTest class >> isAbstract [
 	^ self == OPModelSimulatorTest
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testFromAllTokens [
 	simulator fromAllTokens.
 	self assert: simulator itemsForPriority size = simulator tokenCount
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testFromSelf [
 	simulator fromSelf.
 	self assert: simulator itemsForPriority size = 1.
 	self assert: simulator itemsForPriority first = simulator
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testFromSimulableTokens [
 	simulator fromSimulableTokens.
 	self assert: simulator itemsForPriority size = simulator simulableTokens size
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testFromSteppableTokens [
 	simulator fromSteppableTokens.
 	self assert: simulator itemsForPriority size = simulator steppableTokens size
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testOrderAny [
 	simulator
 		fromAllTokens;
@@ -48,7 +50,7 @@ OPModelSimulatorTest >> testOrderAny [
 	self assert: simulator itemsForSelect first priority = 1
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testOrderByPriority [
 	simulator
 		fromAllTokens;
@@ -61,7 +63,7 @@ OPModelSimulatorTest >> testOrderByPriority [
 	self assert: simulator itemsForSelect second priority = 1
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testOrderByReversedPriority [
 	simulator
 		fromAllTokens;
@@ -74,7 +76,7 @@ OPModelSimulatorTest >> testOrderByReversedPriority [
 	self assert: simulator itemsForSelect allButLast last priority = 1.
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testPriorityAny [
 	simulator
 		fromAllTokens;
@@ -83,7 +85,7 @@ OPModelSimulatorTest >> testPriorityAny [
 	self assert: simulator itemsForOrder size = simulator tokenCount
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testPriorityTop [
 	simulator
 		fromAllTokens;
@@ -92,7 +94,7 @@ OPModelSimulatorTest >> testPriorityTop [
 	self assert: simulator itemsForOrder size = (simulator tokenCount - 1)
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectAll [
 	simulator
 		fromAllTokens;
@@ -106,7 +108,7 @@ OPModelSimulatorTest >> testSelectAll [
 	self assert: simulator itemsForAction second priority = 1.
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectFirst [
 	simulator
 		fromAllTokens;
@@ -119,7 +121,7 @@ OPModelSimulatorTest >> testSelectFirst [
 	self assert: simulator itemsForAction first priority = 2
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectFirstN [
 	simulator
 		fromAllTokens;
@@ -133,7 +135,7 @@ OPModelSimulatorTest >> testSelectFirstN [
 	self assert: simulator itemsForAction second priority = 1
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectFromTo [
 	simulator
 		fromAllTokens;
@@ -147,7 +149,7 @@ OPModelSimulatorTest >> testSelectFromTo [
 	self assert: simulator itemsForAction second priority = 1
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectLast [
 	simulator
 		fromAllTokens;
@@ -160,7 +162,7 @@ OPModelSimulatorTest >> testSelectLast [
 	self assert: simulator itemsForAction first priority = 2
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectLastN [
 	simulator
 		fromAllTokens;
@@ -174,7 +176,7 @@ OPModelSimulatorTest >> testSelectLastN [
 	self assert: simulator itemsForAction second priority = 2
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPModelSimulatorTest >> testSelectOne [
 	simulator
 		fromAllTokens;

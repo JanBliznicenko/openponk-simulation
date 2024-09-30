@@ -18,30 +18,24 @@ Internal Representation and Key Implementation Points.
 	diagramSimulator:		simulator of diagram
 "
 Class {
-	#name : #OPSimulationGUI,
-	#superclass : #DynamicComposablePresenter,
+	#name : 'OPSimulationGUI',
+	#superclass : 'SpPresenter',
 	#instVars : [
 		'diagramSimulator',
 		'diagramController',
 		'buttons'
 	],
-	#category : 'OpenPonk-Simulation'
+	#category : 'OpenPonk-Simulation',
+	#package : 'OpenPonk-Simulation'
 }
 
-{ #category : #defaults }
-OPSimulationGUI class >> buttonHeight [
+{ #category : 'as yet unclassified' }
+OPSimulationGUI class >> defaultLayout [
 
-	^ StandardFonts defaultFont height + 20
+	^ SpBoxLayout newLeftToRight
 ]
 
-{ #category : #specs }
-OPSimulationGUI class >> defaultSpec [
-	^ SpecRowLayout composed
-		newColumn: [ :c | c newRow: [ :r |  ] ];
-		yourself
-]
-
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulationGUI class >> diagramController: aDiagramController [
 	"answers existing simulatorGUI with aDiagramController or creates new one for it"
 
@@ -54,7 +48,7 @@ OPSimulationGUI class >> diagramController: aDiagramController [
 	^ gui
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulationGUI class >> newForController: aDiagramController [
 	^ self new
 		diagramController: aDiagramController;
@@ -62,7 +56,7 @@ OPSimulationGUI class >> newForController: aDiagramController [
 		yourself
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulationGUI class >> stepSimulatorOfController: anElementController [
 	"answers existing simulatorGUI with aDiagramController or creates new one for it and steps simulator of elementController"
 
@@ -71,31 +65,37 @@ OPSimulationGUI class >> stepSimulatorOfController: anElementController [
 	myInstance stepSimulatorOfController: anElementController
 ]
 
-{ #category : #toolbar }
+{ #category : 'toolbar' }
 OPSimulationGUI class >> toolbarMenu: aBuilder [
 	self subclassResponsibility
 ]
 
-{ #category : #toolbar }
+{ #category : 'toolbar' }
 OPSimulationGUI class >> toolbarMenuItemFor: aBuilder [
+
 	^ (aBuilder item: 'Simulation')
-		action: [ "aBuilder model is editor" self diagramController: aBuilder model diagramController ]
+		  iconName: #glamorousSpawn;
+		  action: [ "aBuilder model is editor"
+			  self diagramController: aBuilder model diagramController ];
+		  yourself
 ]
 
-{ #category : #windows }
+{ #category : 'windows' }
 OPSimulationGUI >> activate [
 	"causes simulation GUI to get on top of screen"
 
 	self windowMorph activate
 ]
 
-{ #category : #adding }
+{ #category : 'adding' }
 OPSimulationGUI >> addButtons [
+
 	buttons := self buttonItems.
-	self rebuildWidget
+	self initializeLayout.
+	self withWindowDo: [ :window | self initializeWindow: window ]
 ]
 
-{ #category : #'building widgets' }
+{ #category : 'building widgets' }
 OPSimulationGUI >> alignButtons [
 	"align content of all buttons to left"
 
@@ -104,26 +104,26 @@ OPSimulationGUI >> alignButtons [
 		thenDo: [ :each | each widget widget submorphs first listCentering: #topLeft ]
 ]
 
-{ #category : #'private - hooks' }
+{ #category : 'private - hooks' }
 OPSimulationGUI >> buttonItems [
 	"creates collection of buttons for this GUI"
 
 	^ OrderedCollection
 		with:
-			((self instantiate: ButtonModel)
+			((self newButton)
 				label: 'Save state';
 				iconName: #smallSave;
 				help: 'Save current state into model';
 				action: [ self diagramSimulator saveState ])
 		with:
-			((self instantiate: ButtonModel)
+			((self newButton)
 				label: 'Stop + Load state';
 				iconName: #smallUpdate;
 				help: 'Load state from model from before simulate';
 				action: [ self diagramSimulator loadState ])
 ]
 
-{ #category : #windows }
+{ #category : 'windows' }
 OPSimulationGUI >> close [
 	"ends simulation and closes window
 	it ends simulation by event triggered by closing window"
@@ -131,7 +131,7 @@ OPSimulationGUI >> close [
 	self window close
 ]
 
-{ #category : #'private - updating' }
+{ #category : 'private - updating' }
 OPSimulationGUI >> closed [
 	self diagram announcer unsubscribe: self.
 	self diagramSimulator loadState.
@@ -139,111 +139,117 @@ OPSimulationGUI >> closed [
 	diagramSimulator := nil
 ]
 
-{ #category : #'building widgets' }
+{ #category : 'building widgets' }
 OPSimulationGUI >> createWidgets [
 	buttons do: [ :item | self assign: item to: ('button' , item hash asString) asSymbol ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulationGUI >> diagram [
 	^ self diagramController model
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulationGUI >> diagramController [
 	^ diagramController
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulationGUI >> diagramController: aDiagramController [
 	diagramController := aDiagramController.
 	self initializeWithController
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulationGUI >> diagramSimulator [
 	^ diagramSimulator
 ]
 
-{ #category : #'building widgets' }
-OPSimulationGUI >> dynamicLayout [
-	| keys |
-	keys := self widgets keys.
-	layout := SpecColumnLayout composed.
-	layout newRow: [ :r | r add: #filler ] height: 2.
-	keys size odd
-		ifTrue: [ keys := keys copyWith: #filler ].
-	keys
-		pairsDo: [ :odd :even | 
-			layout
-				newRow: [ :r | 
-					r
-						add: odd;
-						add: even ]
-				height: self class buttonHeight ].
-	layout newRow: [ :r |  ].
-	^ layout
-]
-
-{ #category : #'building widgets' }
-OPSimulationGUI >> filler [
-	^ self instantiate: LabelModel
-]
-
-{ #category : #api }
-OPSimulationGUI >> initialExtent [
-	^ 360 @ 300
-]
-
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPSimulationGUI >> initialize [
+
 	buttons := OrderedCollection new.
-	super initialize.
-	self title: 'Simulation'
+	super initialize
 ]
 
-{ #category : #initialization }
+{ #category : 'building widgets' }
+OPSimulationGUI >> initializeLayout [
+
+	| items gridLayout counter |
+	gridLayout := SpGridLayout new.
+	items := buttons.
+	buttons size odd ifTrue: [ 
+		items := items copyWith: SpNullPresenter new ].
+	counter := 0.
+	items pairsDo: [ :odd :even | 
+		counter := counter + 1.
+		gridLayout add: odd at: 1 @ counter.
+
+		gridLayout add: even at: 2 @ counter ].
+	self layout: gridLayout
+]
+
+{ #category : 'initialization' }
+OPSimulationGUI >> initializePresenters [
+
+	super initializePresenters.
+	self initializeLayout
+]
+
+{ #category : 'initialization' }
+OPSimulationGUI >> initializeWindow: aWindow [
+
+	diagramController ifNil: [ ^ self ].
+	aWindow initialExtent: 360 @ (buttons size * self class buttonHeight).
+	aWindow title: 'Simulation of ' , self diagram name
+]
+
+{ #category : 'initialization' }
 OPSimulationGUI >> initializeWithController [
 	"creates and prepares simulator for current diagramController"
 
 	self loadSimulation.
-	self diagram when: OPElementAdded do: [ self reloadController ].
-	self diagram when: OPElementRemoved do: [ self reloadController ].
-	self title: 'Simulation of ' , self diagram name.
+	self diagram
+		when: OPElementAdded
+		send: #reloadController
+		to: self.
+	self diagram
+		when: OPElementRemoved
+		send: #reloadController	
+		to: self.
 	self addButtons
 ]
 
-{ #category : #windows }
+{ #category : 'windows' }
 OPSimulationGUI >> isOpen [
 	^ self hasWindow
 ]
 
-{ #category : #'private - hooks' }
+{ #category : 'private - hooks' }
 OPSimulationGUI >> loadSimulation [
 	"prepares simulation - called with every reload"
 
 	diagramSimulator := self simulatorClass model: self diagram
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPSimulationGUI >> open [
 	self isOpen
 		ifTrue: [ ^ self takeKeyboardFocus ].
-	self openWithSpec.
+	super open.
 	self window whenClosedDo: [ self closed ]
 ]
 
-{ #category : #'building widgets' }
+{ #category : 'building widgets' }
 OPSimulationGUI >> rebuildWidget [
-	self widgets removeAll.
-	self createWidgets.
-	self needFullRebuild: false.
-	self buildWithSpecLayout: self dynamicLayout.
-	self alignButtons.
-	self extent: 360 @ (26 + (buttons size * self class buttonHeight / 2))
+
+	self initializeLayout.
+	self withWindowDo: [ :window | 
+		window initialExtent:
+			360 @ (26 + (buttons size * self class buttonHeight / 2)) ]
 ]
 
-{ #category : #updating }
+{ #category : 'updating' }
 OPSimulationGUI >> reloadController [
 	"reloads elements from diagramController"
 
@@ -257,14 +263,14 @@ OPSimulationGUI >> reloadController [
 		activate
 ]
 
-{ #category : #'private - hooks' }
+{ #category : 'private - hooks' }
 OPSimulationGUI >> simulatorClass [
 	"diagram simulator class"
 
-	^ SubclassResponsibility
+	^ self subclassResponsibility
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPSimulationGUI >> stepSimulatorOfController: anElementController [
 	"steps simulator of elementController"
 
@@ -273,7 +279,7 @@ OPSimulationGUI >> stepSimulatorOfController: anElementController [
 	elementSimulator step
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPSimulationGUI >> windowMorph [
 	^ self window window
 ]

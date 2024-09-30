@@ -1,6 +1,6 @@
 Class {
-	#name : #OPDummyDCElementSimulator,
-	#superclass : #OPDummyDCSimulator,
+	#name : 'OPDummyDCElementSimulator',
+	#superclass : 'OPDummyDCSimulator',
 	#instVars : [
 		'steppable',
 		'incoming',
@@ -12,10 +12,12 @@ Class {
 		'model',
 		'tokens'
 	],
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 OPDummyDCElementSimulator class >> model: aModel diagramSimulator: aSimulator [
 	^ self new
 		model: aModel;
@@ -23,17 +25,17 @@ OPDummyDCElementSimulator class >> model: aModel diagramSimulator: aSimulator [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> diagramSimulator [
 	^ diagramSimulator
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> diagramSimulator: aSimulator [
 	diagramSimulator := aSimulator
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPDummyDCElementSimulator >> initialize [
 	loaded := false.
 	steppable := false.
@@ -41,72 +43,72 @@ OPDummyDCElementSimulator >> initialize [
 	tokens := OrderedCollection with: OPDummyDCToken new.
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDummyDCElementSimulator >> isSimulable [
 	^ true
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDummyDCElementSimulator >> isSteppable [
 	^ steppable
 ]
 
-{ #category : #creation }
+{ #category : 'creation' }
 OPDummyDCElementSimulator >> loadConnectedItems [
 	loadedConnected := true
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPDummyDCElementSimulator >> loadState [
 	state := 1
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> loaded [
 	^ state > 0 & loadedConnected
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> model [
 	^ model
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> model: aModel [
 	model := aModel
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPDummyDCElementSimulator >> saveState [
 	state := state + 1
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPDummyDCElementSimulator >> simulableTokens [
 	^ self tokens
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> state [
 	^ state
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> steppable: aBoolean [
 	steppable := aBoolean
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPDummyDCElementSimulator >> steppableTokens [
 	^ OrderedCollection new
 ]
 
-{ #category : #tokens }
+{ #category : 'tokens' }
 OPDummyDCElementSimulator >> tokenCount [
 	^ tokens size
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCElementSimulator >> tokens [
 	^ tokens
 ]

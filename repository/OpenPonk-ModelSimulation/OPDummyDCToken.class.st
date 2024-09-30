@@ -1,28 +1,30 @@
 Class {
-	#name : #OPDummyDCToken,
-	#superclass : #OPDummyDCSimulator,
+	#name : 'OPDummyDCToken',
+	#superclass : 'OPDummyDCSimulator',
 	#instVars : [
 		'element'
 	],
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCToken >> element [
 	^ element
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPDummyDCToken >> element: anElement [
 	element := anElement
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDummyDCToken >> isSimulable [
 	^ true
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 OPDummyDCToken >> isSteppable [
 	^ false
 ]

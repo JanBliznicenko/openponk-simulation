@@ -2,22 +2,24 @@
 A DCElementSimulatorTest is a test class for testing the behavior of DCElementSimulator
 "
 Class {
-	#name : #OPElementSimulatorTest,
-	#superclass : #OPModelSimulatorTest,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPElementSimulatorTest',
+	#superclass : 'OPModelSimulatorTest',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPElementSimulatorTest >> controllerClass [
 	^ OPDummySubclassOfDCElementSimulator
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPElementSimulatorTest >> prepareOneSimulable [
 	simulator fromSelf
 ]
 
-{ #category : #running }
+{ #category : 'running' }
 OPElementSimulatorTest >> setUp [
 	super setUp.
 	simulator model: OPDummyDCElement new.
@@ -26,7 +28,7 @@ OPElementSimulatorTest >> setUp [
 		addToken: OPDummyDCToken new
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPElementSimulatorTest >> testAccessing [
 	| assertTokens |
 	assertTokens := [ :amount | 
@@ -46,7 +48,7 @@ OPElementSimulatorTest >> testAccessing [
 	assertTokens value: 0
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPElementSimulatorTest >> testConnected [
 	self assert: simulator outgoing size = 0.
 	self assert: simulator incoming size = 0.
@@ -60,7 +62,7 @@ OPElementSimulatorTest >> testConnected [
 	self assert: simulator incoming first incoming size = 0
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPElementSimulatorTest >> testStates [
 	self assert: simulator model state = 1.
 	simulator saveState.
@@ -69,7 +71,7 @@ OPElementSimulatorTest >> testStates [
 	self assert: simulator model state = 1
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPElementSimulatorTest >> testStep [
 	simulator
 		fromSelf;

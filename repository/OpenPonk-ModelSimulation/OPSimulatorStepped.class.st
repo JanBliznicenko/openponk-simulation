@@ -2,7 +2,9 @@
 I'm event - simulator just finished a step
 "
 Class {
-	#name : #OPSimulatorStepped,
-	#superclass : #OPSimulatorStepEvent,
-	#category : 'OpenPonk-ModelSimulation-Events'
+	#name : 'OPSimulatorStepped',
+	#superclass : 'OPSimulatorStepEvent',
+	#category : 'OpenPonk-ModelSimulation-Events',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Events'
 }

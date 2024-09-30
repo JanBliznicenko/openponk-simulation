@@ -12,8 +12,8 @@ Stepping settings are divided into categories, each of these categories produces
 	stepSelect:		stepping settings block - enables to pick only certain amount of items
 "
 Class {
-	#name : #OPModelSimulator,
-	#superclass : #OPSimulator,
+	#name : 'OPModelSimulator',
+	#superclass : 'OPSimulator',
 	#instVars : [
 		'model',
 		'stepItemsFrom',
@@ -21,17 +21,19 @@ Class {
 		'stepItemsPriority',
 		'stepItemsSelect'
 	],
-	#category : 'OpenPonk-ModelSimulation-Simulators'
+	#category : 'OpenPonk-ModelSimulation-Simulators',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Simulators'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPModelSimulator class >> model: aDiagram [
 	^ self new
 		model: aDiagram;
 		yourself
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> fromAllTokens [
 	"stepping settings
 	before: none
@@ -42,7 +44,7 @@ OPModelSimulator >> fromAllTokens [
 	stepItemsFrom := [ self tokens ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> fromSelf [
 	"stepping settings
 	before: none
@@ -50,10 +52,10 @@ OPModelSimulator >> fromSelf [
 	
 	steps self"
 
-	stepItemsFrom := self asOrderedCollection
+	stepItemsFrom := OrderedCollection with: self
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> fromSimulableTokens [
 	"stepping settings
 	before: none
@@ -64,7 +66,7 @@ OPModelSimulator >> fromSimulableTokens [
 	stepItemsFrom := [ self simulableTokens ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> fromSteppableTokens [
 	"stepping settings
 	before: none
@@ -75,44 +77,44 @@ OPModelSimulator >> fromSteppableTokens [
 	stepItemsFrom := [ self steppableTokens ]
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPModelSimulator >> itemsForAction [
 	^ stepItemsSelect value
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPModelSimulator >> itemsForOrder [
 	^ stepItemsPriority value
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPModelSimulator >> itemsForPriority [
 	^ stepItemsFrom value
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 OPModelSimulator >> itemsForSelect [
 	^ stepItemsOrder value
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPModelSimulator >> loadState [
 	"loads state of model into simulator"
 
 	self subclassResponsibility
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPModelSimulator >> model [
 	^ model
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPModelSimulator >> model: aModel [
 	model := aModel
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> orderAny [
 	"stepping settings
 	before: priority
@@ -123,7 +125,7 @@ OPModelSimulator >> orderAny [
 	stepItemsOrder := [ self itemsForOrder ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> orderByPriority [
 	"stepping settings
 	before: priority
@@ -137,7 +139,7 @@ OPModelSimulator >> orderByPriority [
 		yourself ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> orderByReversedPriority [
 	"stepping settings
 	before: priority
@@ -151,7 +153,7 @@ OPModelSimulator >> orderByReversedPriority [
 		yourself ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> orderRandomized [
 	"stepping settings
 	before: priority
@@ -162,7 +164,7 @@ OPModelSimulator >> orderRandomized [
 	stepItemsOrder := [ self itemsForOrder asOrderedCollection shuffle ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> priorityAny [
 	"stepping settings
 	before: from
@@ -173,7 +175,7 @@ OPModelSimulator >> priorityAny [
 	stepItemsPriority := [ self itemsForPriority ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> priorityTop [
 	"stepping settings
 	before: from
@@ -190,21 +192,21 @@ OPModelSimulator >> priorityTop [
 			fromCol select: [ :item | item priority = maxPriority ] ] ]
 ]
 
-{ #category : #'private - creation' }
+{ #category : 'private - creation' }
 OPModelSimulator >> reversedSortBlock [
 	"answers sorting block for putting item with lower priority before one with higher priority"
 
 	^ [ :e1 :e2 | e1 priority <= e2 priority ]
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPModelSimulator >> saveState [
 	"loads state of model into simulator"
 
 	self subclassResponsibility
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectAll [
 	"stepping settings
 	before: in
@@ -215,7 +217,7 @@ OPModelSimulator >> selectAll [
 	stepItemsSelect := [ self itemsForSelect ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectFirst [
 	"stepping settings
 	before: in
@@ -226,7 +228,7 @@ OPModelSimulator >> selectFirst [
 	self selectFirst: 1
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectFirst: amount [
 	"stepping settings
 	before: in
@@ -237,7 +239,7 @@ OPModelSimulator >> selectFirst: amount [
 	self selectFrom: 1 to: amount
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectFrom: firstIndex to: lastIndex [
 	"stepping settings
 	before: in
@@ -251,7 +253,7 @@ OPModelSimulator >> selectFrom: firstIndex to: lastIndex [
 	collection copyFrom: firstIndex to: (lastIndex min: collection size) ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectLast [
 	"stepping settings
 	before: in
@@ -262,7 +264,7 @@ OPModelSimulator >> selectLast [
 	self selectLast: 1
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectLast: amount [
 	"stepping settings
 	before: in
@@ -276,7 +278,7 @@ OPModelSimulator >> selectLast: amount [
 	collection last: (amount min: collection size) ]
 ]
 
-{ #category : #stepping }
+{ #category : 'stepping' }
 OPModelSimulator >> selectOne: anIndex [
 	"stepping settings
 	before: in
@@ -287,7 +289,7 @@ OPModelSimulator >> selectOne: anIndex [
 	self selectFrom: anIndex to: anIndex
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 OPModelSimulator >> setDefaultStepping [
 	"sets default stepping settings"
 
@@ -298,35 +300,35 @@ OPModelSimulator >> setDefaultStepping [
 		selectAll
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPModelSimulator >> simulableTokens [
 	"collection of tokens which are simulable"
 
 	^ self subclassResponsibility
 ]
 
-{ #category : #'private - creation' }
+{ #category : 'private - creation' }
 OPModelSimulator >> sortBlock [
 	"answers sorting block for putting item with higher priority before one with lower priority"
 
 	^ [ :e1 :e2 | e1 priority >= e2 priority ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPModelSimulator >> steppableTokens [
 	"collection of tokens which are steppable"
 
 	^ self subclassResponsibility
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPModelSimulator >> tokenCount [
 	"amount of tokens"
 
 	^ self subclassResponsibility
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPModelSimulator >> tokens [
 	"collection of tokens"
 

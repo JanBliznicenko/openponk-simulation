@@ -2,22 +2,24 @@
 A DCTokenTest is a test class for testing the behavior of DCToken
 "
 Class {
-	#name : #OPTokenTest,
-	#superclass : #OPSimulatorTest,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPTokenTest',
+	#superclass : 'OPSimulatorTest',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPTokenTest >> controllerClass [
 	^ OPDummySubclassOfDCToken
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 OPTokenTest >> prepareOneSimulable [
 	"do nothing"
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPTokenTest >> testStep [
 	simulator addAction: [ :item | item doState ].
 

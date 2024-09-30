@@ -2,12 +2,14 @@
 A DCSimulatorActionEventTest is a test class for testing the behavior of DCSimulatorActionEvent
 "
 Class {
-	#name : #OPSimulatorActionEventTest,
-	#superclass : #OPSimulatorEventTest,
-	#category : 'OpenPonk-ModelSimulation-Tests'
+	#name : 'OPSimulatorActionEventTest',
+	#superclass : 'OPSimulatorEventTest',
+	#category : 'OpenPonk-ModelSimulation-Tests',
+	#package : 'OpenPonk-ModelSimulation',
+	#tag : 'Tests'
 }
 
-{ #category : #tests }
+{ #category : 'tests' }
 OPSimulatorActionEventTest >> testInstanceCreation [
 	| event |
 	event := OPSimulatorActionEvent simulator: simulator action: [ 2 + 2 ] index: 2.
