@@ -215,11 +215,11 @@ OPSimulationGUI >> initializeWithController [
 	self loadSimulation.
 	self whenWindowClosedUnsubscribeFrom: self diagramModel.
 	self diagramModel
-		when: OPElementAdded
+		weakWhen: OPElementAdded
 		send: #reloadController
 		to: self.
 	self diagramModel
-		when: OPElementRemoved
+		weakWhen: OPElementRemoved
 		send: #reloadController
 		to: self.
 	self addButtons
