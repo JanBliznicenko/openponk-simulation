@@ -253,7 +253,7 @@ OPSimulator >> when: anEvent do: aBlock for: aReceiver [
 ]
 
 { #category : 'announcing' }
-OPSimulator >> when: anAnnouncementClass send: aSelector to: anObject [
+OPSimulator >> when: anAnnouncementClass send: aSelector to: aReceiver [
 
-	announcer when: anAnnouncementClass send: aSelector to: anObject
+	^ announcer when: anAnnouncementClass send: aSelector to: aReceiver
 ]

@@ -1,10 +1,11 @@
 Class {
-	#name : #BaselineOfOpenPonkModelSimulation,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfOpenPonkModelSimulation
+	#name : 'BaselineOfOpenPonkModelSimulation',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfOpenPonkModelSimulation',
+	#package : 'BaselineOfOpenPonkModelSimulation'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BaselineOfOpenPonkModelSimulation >> baseline: spec [
 	<baseline>
 	spec

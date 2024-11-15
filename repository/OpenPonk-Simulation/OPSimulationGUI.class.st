@@ -41,10 +41,11 @@ OPSimulationGUI class >> diagramController: aDiagramController [
 
 	| gui |
 	gui := self allInstances
-		detect:
-			[ :anyInstance | anyInstance isOpen and: [ anyInstance diagramController == aDiagramController ] ]
-		ifNone: [ self newForController: aDiagramController ].
-	gui activate.	"causes simulation GUI to get on top of screen"
+		       detect: [ :anyInstance |
+			       anyInstance isOpen and: [
+				       anyInstance diagramController == aDiagramController ] ]
+		       ifNone: [ self newForController: aDiagramController ].
+	gui activate. "causes simulation GUI to get on top of screen"
 	^ gui
 ]
 
@@ -133,7 +134,7 @@ OPSimulationGUI >> close [
 
 { #category : 'private - updating' }
 OPSimulationGUI >> closed [
-	self diagram announcer unsubscribe: self.
+	self diagramModel announcer unsubscribe: self.
 	self diagramSimulator loadState.
 	diagramController := nil.
 	diagramSimulator := nil
@@ -145,19 +146,21 @@ OPSimulationGUI >> createWidgets [
 ]
 
 { #category : 'accessing' }
-OPSimulationGUI >> diagram [
-	^ self diagramController model
-]
-
-{ #category : 'accessing' }
 OPSimulationGUI >> diagramController [
 	^ diagramController
 ]
 
 { #category : 'accessing' }
 OPSimulationGUI >> diagramController: aDiagramController [
+
 	diagramController := aDiagramController.
+	self application: aDiagramController editor application.
 	self initializeWithController
+]
+
+{ #category : 'accessing' }
+OPSimulationGUI >> diagramModel [
+	^ self diagramController model
 ]
 
 { #category : 'accessing' }
@@ -199,9 +202,10 @@ OPSimulationGUI >> initializePresenters [
 { #category : 'initialization' }
 OPSimulationGUI >> initializeWindow: aWindow [
 
+	super initializeWindow: aWindow.
 	diagramController ifNil: [ ^ self ].
 	aWindow initialExtent: 360 @ (buttons size * self class buttonHeight).
-	aWindow title: 'Simulation of ' , self diagram name
+	aWindow title: 'Simulation of ' , self diagramModel name
 ]
 
 { #category : 'initialization' }
@@ -209,13 +213,14 @@ OPSimulationGUI >> initializeWithController [
 	"creates and prepares simulator for current diagramController"
 
 	self loadSimulation.
-	self diagram
-		when: OPElementAdded
+	self whenWindowClosedUnsubscribeFrom: self diagramModel.
+	self diagramModel
+		weakWhen: OPElementAdded
 		send: #reloadController
 		to: self.
-	self diagram
-		when: OPElementRemoved
-		send: #reloadController	
+	self diagramModel
+		weakWhen: OPElementRemoved
+		send: #reloadController
 		to: self.
 	self addButtons
 ]
@@ -229,7 +234,7 @@ OPSimulationGUI >> isOpen [
 OPSimulationGUI >> loadSimulation [
 	"prepares simulation - called with every reload"
 
-	diagramSimulator := self simulatorClass model: self diagram
+	diagramSimulator := self simulatorClass model: self diagramModel
 ]
 
 { #category : 'instance creation' }
