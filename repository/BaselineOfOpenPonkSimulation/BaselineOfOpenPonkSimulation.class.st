@@ -1,21 +1,22 @@
 Class {
-	#name : #BaselineOfOpenPonkSimulation,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfOpenPonkSimulation
+	#name : 'BaselineOfOpenPonkSimulation',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfOpenPonkSimulation',
+	#package : 'BaselineOfOpenPonkSimulation'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BaselineOfOpenPonkSimulation >> baseline: spec [
 
 	<baseline>
 	spec for: #common do: [
 		spec
 			baseline: 'OpenPonk'
-			with: [ spec repository: 'github://openponk/openponk:v4.0.x' ].
+			with: [ spec repository: 'github://openponk/openponk:v4.1.x' ].
 		spec
 			baseline: 'OpenPonkModelSimulation'
 			with: [
-			spec repository: 'github://JanBliznicenko/openponk-simulation:v4.0.x' ].
+			spec repository: 'github://JanBliznicenko/openponk-simulation:v4.1.x' ].
 		spec
 			package: 'OpenPonk-Simulation'
 			with: [ spec requires: #( 'OpenPonkModelSimulation' ) ].
