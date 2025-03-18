@@ -237,7 +237,7 @@ OPSimulationGUI >> loadSimulation [
 	diagramSimulator := self simulatorClass model: self diagramModel
 ]
 
-{ #category : 'instance creation' }
+{ #category : 'showing' }
 OPSimulationGUI >> open [
 	self isOpen
 		ifTrue: [ ^ self takeKeyboardFocus ].
