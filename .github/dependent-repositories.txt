@@ -1,0 +1,6 @@
+{
+	"include" : [
+		{ "repository" : "OpenPonk/borm-editor", "branch" : "master", "build-dependent" : true },
+		{ "repository" : "OpenPonk/petrinets", "branch" : "master", "build-dependent" : false }
+	]
+}
