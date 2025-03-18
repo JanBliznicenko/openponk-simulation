@@ -15,7 +15,7 @@ In Playground, run following code:
 ```
 Metacello new
     baseline: 'OpenPonkSimulation';
-    repository: 'github://OpenPonk/openponk-simulation';
+    repository: 'github://OpenPonk/simulation';
     load
 ```
 
